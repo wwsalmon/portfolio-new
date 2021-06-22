@@ -13,19 +13,19 @@ export default function Navbar() {
         },
         {
             label: "Code & Building",
-            link: "/writing",
+            link: "/building",
         },
         {
             label: "Photo",
-            link: "/writing",
+            link: "/photo",
         },
         {
             label: "Film",
-            link: "/writing",
+            link: "/film",
         },
         {
             label: "Blog",
-            link: "/blog",
+            link: "https://postulate.us/@samsonzhang",
         },
     ];
 
