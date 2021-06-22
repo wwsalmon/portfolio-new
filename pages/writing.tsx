@@ -1,6 +1,7 @@
 import Container from "../components/Container";
 import {WritingItemObj} from "../utils/types";
 import WritingItem from "../components/WritingItem";
+import SEO from "../components/SEO";
 
 export default function Writing({}: {  }) {
     const essays: WritingItemObj[] = [
@@ -56,6 +57,7 @@ export default function Writing({}: {  }) {
 
     return (
         <Container className="mt-16">
+            <SEO title="Writing"/>
             <h1 className="font-bold text-4xl mb-2">Writing</h1>
             <p className="text-gray2 font-serif text-2xl">Journalism, essays, prose, poetry</p>
             <div className="md:flex md:-mx-12">
