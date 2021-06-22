@@ -28,6 +28,7 @@ export default function Home() {
                     {pastExperience.map(item => (
                         <HomeItem item={item}/>
                     ))}
+                    <UnderlinedLink className="text-gray2" href="/szhang-resume.pdf">Full resume</UnderlinedLink>
                 </div>
             </div>
         </Container>
