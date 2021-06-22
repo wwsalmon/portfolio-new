@@ -35,9 +35,9 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="w-full h-20 fixed top-0" style={{background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(244,244,245,1) 100%)"}}/>
+            <div className="w-full h-20 fixed top-0 z-10" style={{background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(244,244,245,1) 100%)"}}/>
             <div className="h-16 w-full invisible"/>
-            <div className="w-full sticky top-4">
+            <div className="w-full sticky top-4 z-20">
                 <Container>
                     <div className="flex items-center pb-4">
                         <Link href="/">
@@ -58,7 +58,7 @@ export default function Navbar() {
                     </div>
                 </Container>
             </div>
-            <div className={"fixed top-0 bottom-0 right-0 w-72 p-6 bg-white z-10 shadow " + (navbarOpen ? "" : "-right-80")} style={{transition: "all 0.2s ease"}}>
+            <div className={"fixed top-0 bottom-0 right-0 w-72 p-6 bg-white z-30 shadow " + (navbarOpen ? "" : "-right-80")} style={{transition: "all 0.2s ease"}}>
                 <div className="flex">
                     <button className="text-xl text-gray-1 ml-auto" onClick={() => setNavbarOpen(false)}>
                         <FiX/>
