@@ -13,7 +13,7 @@ export default function Home() {
                 I’m a Media Studies and CS major interested in technological innovation, social change (particularly regarding institutional and structural power), and the relationships between them. I’ve worked as a journalist, designer, filmmaker, software engineer, product manager, and entrepreneur. I also love to cook, run, and play piano 😁
             </p>
             <p className="text-xl font-serif text-gray1 my-8" style={{maxWidth: 700}}>
-                On this website, you’ll find portfolios for my <UnderlinedLink href="/writing">writing</UnderlinedLink>, <UnderlinedLink href="/building">dev/product work</UnderlinedLink>, <UnderlinedLink href="/photo">photography</UnderlinedLink>, and <UnderlinedLink href="/film">filmmaking</UnderlinedLink>. You can check out my latest thoughts + updates on <UnderlinedLink href="https://postulate.us/@samsonzhang">my Postulate blog</UnderlinedLink>, or the questions I’m pondering on my question journal.
+                On this website, you’ll find portfolios for my <UnderlinedLink href="/writing">writing</UnderlinedLink>, <UnderlinedLink href="/building">dev</UnderlinedLink>, <UnderlinedLink href="/design">design</UnderlinedLink>, <UnderlinedLink href="/photo">photography</UnderlinedLink>, and <UnderlinedLink href="/film">filmmaking</UnderlinedLink>. You can check out my latest thoughts + updates on <UnderlinedLink href="https://postulate.us/@samsonzhang">my Postulate blog</UnderlinedLink>, or the questions I’m pondering on my question journal.
             </p>
             <div className="md:flex md:-mx-12">
                 <div className="md:w-1/2 md:mx-12 mt-24">

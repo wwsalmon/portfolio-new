@@ -16,6 +16,10 @@ export default function Navbar() {
             link: "/building",
         },
         {
+            label: "Design",
+            link: "/design",
+        },
+        {
             label: "Photo",
             link: "/photo",
         },
