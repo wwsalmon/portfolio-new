@@ -94,11 +94,12 @@ export default function Building() {
             title: "Founder",
             of: true,
             place: "Postulate",
-            // description: "My first startup. Selected to interview for YC S‘20",
+            url: "http://postulate.us/",
         },
         {
             title: "Senior PM and SWE",
             place: "StartupTree",
+            url: "http://startuptree.co/",
         },
         {
             title: "SWE",

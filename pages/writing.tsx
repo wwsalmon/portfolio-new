@@ -84,16 +84,19 @@ export default function Writing({}: {  }) {
             title: "Editor",
             serif: true,
             place: <i>The Yappie</i>,
+            url: "https://theyappie.com/",
         },
         {
             title: "Critical Writing Assoc. Editor, Critic & Columnist",
             place: <i>The Incandescent Review</i>,
             serif: true,
+            url: "https://www.theincandescentreview.org/",
         },
         {
             title: "Executive Digital Editor",
             place: <i>The Phillipian</i>,
             serif: true,
+            url: "https://phillipian.net/",
         },
     ];
 

@@ -6,6 +6,7 @@ export interface HomeItemObj {
     place: string | ReactNode,
     serif?: boolean,
     description?: string | ReactNode,
+    url?: string,
 }
 
 export interface WritingItemObj {

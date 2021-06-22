@@ -1,5 +1,6 @@
 import React from "react";
 import {HomeItemObj} from "../utils/types";
+import UnderlinedLink from "./UnderlinedLink";
 
 export default function HomeItem({item}: { item: HomeItemObj }) {
     return (
@@ -9,7 +10,9 @@ export default function HomeItem({item}: { item: HomeItemObj }) {
                     {item.title + " "}
                 </span>
                 <span>
-                    {item.of ? "of" : "at"} {item.place}
+                    {item.of ? "of" : "at"} {item.url ? (
+                        <UnderlinedLink href={item.url}>{item.place}</UnderlinedLink>
+                    ) : item.place}
                 </span>
             </div>
             {item.description && (
