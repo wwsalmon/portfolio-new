@@ -104,7 +104,7 @@ export default function Writing({}: {  }) {
             <p className="text-gray2 font-serif text-2xl">Journalism, essays, prose, poetry</p>
             <TwoColContainer>
                 <TwoColChild>
-                    <PortfolioSection heading="Essays and Editorials">
+                    <PortfolioSection heading="Essays">
                         {essays.map(item => <WritingItem item={item}/>)}
                     </PortfolioSection>
                 </TwoColChild>
