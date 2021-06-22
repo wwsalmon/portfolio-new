@@ -3,6 +3,9 @@ import HomeItem from "../components/HomeItem";
 import UnderlinedLink from "../components/UnderlinedLink";
 import SEO from "../components/SEO";
 import {currentExperience, pastExperience} from "../utils/experience";
+import TwoColContainer from "../components/TwoColContainer";
+import TwoColChild from "../components/TwoColChild";
+import Contact from "../components/Contact";
 
 export default function Home() {
     return (
@@ -16,21 +19,21 @@ export default function Home() {
             <p className="text-xl font-serif text-gray1 my-8" style={{maxWidth: 700}}>
                 On this website, you’ll find portfolios for my <UnderlinedLink href="/writing">writing</UnderlinedLink>, <UnderlinedLink href="/building">engineering/product management</UnderlinedLink>, <UnderlinedLink href="/design">design</UnderlinedLink>, <UnderlinedLink href="/photo">photography</UnderlinedLink>, and <UnderlinedLink href="/film">filmmaking</UnderlinedLink>. You can check out my latest thoughts + updates on <UnderlinedLink href="https://postulate.us/@samsonzhang">my Postulate blog</UnderlinedLink>, or the questions I’m pondering on my question journal.
             </p>
-            <div className="md:flex md:-mx-12">
-                <div className="md:w-1/2 md:mx-12 mt-24">
-                    <h3 className="italic font-serif text-xl mb-8">Currently</h3>
+            <TwoColContainer>
+                <TwoColChild>
+                    <h3 className="italic font-serif text-xl mb-8 mt-24">Currently</h3>
                     {currentExperience.map(item => (
                         <HomeItem item={item}/>
                     ))}
-                </div>
-                <div className="md:w-1/2 md:mx-12 mt-24">
-                    <h3 className="italic font-serif text-xl mb-8">Past</h3>
+                </TwoColChild>
+                <TwoColChild>
+                    <h3 className="italic font-serif text-xl mb-8 mt-24">Past</h3>
                     {pastExperience.map(item => (
                         <HomeItem item={item}/>
                     ))}
                     <UnderlinedLink className="text-gray2" href="/szhang-resume.pdf">Full resume</UnderlinedLink>
-                </div>
-            </div>
+                </TwoColChild>
+            </TwoColContainer>
         </Container>
     );
 }
