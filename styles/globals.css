@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "DM Sans", sans-serif;
+    @apply text-black;
+}
+
+.font-serif {
+    font-family: "Crimson Text", serif;
+}
+
+.font-display {
+    font-family: "DM Serif Display", serif;
+}
