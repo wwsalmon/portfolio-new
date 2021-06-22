@@ -7,3 +7,9 @@ export interface HomeItemObj {
     serif?: boolean,
     description?: string | ReactNode,
 }
+
+export interface WritingItemObj {
+    title: string,
+    url: string,
+    publication?: string,
+}
