@@ -8,7 +8,7 @@ export default function Photo() {
         <Container className="mt-16">
             <SEO title="Photo"/>
             <h1 className="font-bold text-4xl mb-2">Photo</h1>
-            <p className="text-gray2 font-serif text-2xl">Snapshots of people and their stories. Portraits, event coverage, documentary photography.</p>
+            <p className="text-gray2 font-serif text-2xl">Photojournalism, portraits, events</p>
             <PhotoGallery galleryArray={photo}/>
         </Container>
     );
