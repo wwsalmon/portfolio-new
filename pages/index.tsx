@@ -7,6 +7,7 @@ export default function Home() {
     return (
         <Container className="mt-16">
             <SEO/>
+            <img src="/headshot.jpg" alt="Headshot of Samson Zhang" className="w-40 h-40 rounded-full mb-12 shadow-lg"/>
             <div className="text-4xl leading-snug"><span>Hi, I'm Samson.<br/>I love building things and telling stories.</span></div>
             <p className="text-xl font-serif text-gray1 my-8" style={{maxWidth: 700}}>
                 I’m a Media Studies and CS major interested in technological innovation, social change (particularly regarding institutional and structural power), and overlaps between them. I’ve worked as a journalist, designer, filmmaker, software engineer, product manager, and entrepreneur. I also love to cook, run, and play piano 😁
