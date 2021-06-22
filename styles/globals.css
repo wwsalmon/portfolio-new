@@ -14,3 +14,7 @@ body {
 .font-display {
     font-family: "DM Serif Display", serif;
 }
+
+.font-code {
+    font-family: "DM Mono", monospace;
+}

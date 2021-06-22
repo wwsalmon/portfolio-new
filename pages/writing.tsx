@@ -1,7 +1,11 @@
 import Container from "../components/Container";
-import {WritingItemObj} from "../utils/types";
+import {HomeItemObj, WritingItemObj} from "../utils/types";
 import WritingItem from "../components/WritingItem";
 import SEO from "../components/SEO";
+import TwoColContainer from "../components/TwoColContainer";
+import TwoColChild from "../components/TwoColChild";
+import PortfolioSection from "../components/PortfolioSection";
+import ExperienceSection from "../components/ExperienceSection";
 
 export default function Writing({}: {  }) {
     const essays: WritingItemObj[] = [
@@ -73,31 +77,47 @@ export default function Writing({}: {  }) {
             title: "pedestal (prose)",
             url: "https://www.samsonzhang.com/2020/04/30/pedestal.html",
         },
-    ]
+    ];
+
+    const experience: HomeItemObj[] = [
+        {
+            title: "Editor",
+            serif: true,
+            place: <i>The Yappie</i>,
+        },
+        {
+            title: "Critical Writing Assoc. Editor, Critic & Columnist",
+            place: <i>The Incandescent Review</i>,
+            serif: true,
+        },
+        {
+            title: "Executive Digital Editor",
+            place: <i>The Phillipian</i>,
+            serif: true,
+        },
+    ];
 
     return (
         <Container className="mt-16">
             <SEO title="Writing"/>
             <h1 className="font-bold text-4xl mb-2">Writing</h1>
             <p className="text-gray2 font-serif text-2xl">Journalism, essays, prose, poetry</p>
-            <div className="md:flex md:-mx-12">
-                <div className="md:w-1/2 md:mx-12">
-                    <div className="mt-20">
-                        <h2 className="font-bold text-xl">Essays and editorials</h2>
+            <TwoColContainer>
+                <TwoColChild>
+                    <PortfolioSection heading="Essays and Editorials">
                         {essays.map(item => <WritingItem item={item}/>)}
-                    </div>
-                </div>
-                <div className="md:w-1/2 md:mx-12">
-                    <div className="mt-20">
-                        <h2 className="font-bold text-xl">Journalism</h2>
+                    </PortfolioSection>
+                </TwoColChild>
+                <TwoColChild>
+                    <ExperienceSection experience={experience}/>
+                    <PortfolioSection heading="Journalism">
                         {journalism.map(item => <WritingItem item={item}/>)}
-                    </div>
-                    <div className="mt-20">
-                        <h2 className="font-bold text-xl">Creative</h2>
+                    </PortfolioSection>
+                    <PortfolioSection heading="Creative">
                         {creative.map(item => <WritingItem item={item}/>)}
-                    </div>
-                </div>
-            </div>
+                    </PortfolioSection>
+                </TwoColChild>
+            </TwoColContainer>
         </Container>
     );
 }

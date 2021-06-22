@@ -13,3 +13,11 @@ export interface WritingItemObj {
     url: string,
     publication?: string,
 }
+
+export interface CodeItemObj {
+    name: string,
+    description: string | ReactNode,
+    images?: string[],
+    url: string,
+    tags: string[],
+}
