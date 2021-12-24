@@ -10,6 +10,18 @@ import ExperienceSection from "../components/ExperienceSection";
 export default function Building() {
     const packages: CodeItemObj[] = [
         {
+            name: "next-response-helpers",
+            description: "Helper functions to make NextJS API and SSR responses less verbose",
+            tags: ["next", "npm"],
+            url: "https://www.npmjs.com/package/next-response-helpers",
+        },
+        {
+            name: "react-controlled-component-helpers",
+            description: "Helper functions to make React controlled components less verbose",
+            tags: ["react", "npm"],
+            url: "https://www.npmjs.com/package/react-controlled-component-helpers",
+        },
+        {
             name: "react-robust-accordion",
             description: "Accessible, animated accordion component for React, published on npm",
             tags: ["react", "npm", "css"],
@@ -47,10 +59,31 @@ export default function Building() {
     const projects: CodeItemObj[] = [
         {
             name: "Postulate",
-            description: "10x your learning and writing output by taking public notes. Postulate is a notetaking platform that helps you publish your ideas instead of forgetting them.",
+            description: "GitHub for knowledge: a notetaking app for sharing your thoughts, learning, and work with the world.",
             tags: ["react", "next", "mongodb", "s3"],
             images: ["postulate.jpg"],
-            url: "http://postulate.us/",
+            url: "https://postulate.us/",
+        },
+        {
+            name: "Updately",
+            description: "A social platform for daily updates. Originally built and launched in three days",
+            tags: ["react", "next", "mongodb"],
+            images: ["updately.png"],
+            url: "https://updately.us/",
+        },
+        {
+            name: "TSL COVID Tracker",
+            description: <>A central dashboard for COVID information across the five Claremont Colleges, built for <i>The Student Life</i></>,
+            tags: ["react", "next"],
+            images: ["covid.png"],
+            url: "https://covid.tsl.news/",
+        },
+        {
+            name: "Visualizing Pomona's 2025 Admissions",
+            description: <>Data visualization piece "Diversity takes a dip in Pomona’s Class of 2025" for <i>The Student Life</i></>,
+            tags: ["react", "idyll", "d3"],
+            images: ["datavis.gif"],
+            url: "https://tsl.news/pomona-class-of-2025-diversity/",
         },
         {
             name: "sota.js",
@@ -61,17 +94,10 @@ export default function Building() {
         },
         {
             name: "EloLeague",
-            description: "Log your house, club, or league games and get player rankings and metrics over time. 2-day hackathon build",
+            description: "Log your house, club, or league games and get player rankings and metrics over time. 2-day hackathon build. (Since shut down)",
             tags: ["react", "next", "postgres", "stripe"],
             images: ["eloleague.jpg"],
-            url: "http://eloleague.com/",
-        },
-        {
-            name: "Updately",
-            description: "A social platform for daily updates. Built and launched in three days",
-            tags: ["react", "next", "mongodb"],
-            images: ["updately.png"],
-            url: "http://updately.us/",
+            url: "/",
         },
         {
             name: "Question Journal",
