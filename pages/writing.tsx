@@ -6,9 +6,18 @@ import TwoColContainer from "../components/TwoColContainer";
 import TwoColChild from "../components/TwoColChild";
 import PortfolioSection from "../components/PortfolioSection";
 import ExperienceSection from "../components/ExperienceSection";
+import {currentExperience, pastExperience} from "../utils/experience";
 
 export default function Writing({}: {  }) {
     const essays: WritingItemObj[] = [
+        {
+            title: "river",
+            url: "https://postulate.us/@samsonzhang/p/2021-10-20-river-pmvAtcUbBXoRPTSg66wY8p",
+        },
+        {
+            title: "how to be happy",
+            url: "https://postulate.us/@samsonzhang/p/2021-12-14-how-to-be-happy-miXwjzkuiwJjUkkMQrSEvZ",
+        },
         {
             title: "Journalistic Bias, Not Objectivity, Holds Those in Power Accountable: Deconstructing the Myth of Objectivity in News Media",
             publication: "NOVIDEM Magazine",
@@ -18,11 +27,6 @@ export default function Writing({}: {  }) {
             title: "How Attacking Racial Political Identities Perpetuates White Supremacy",
             publication: "NOVIDEM Magazine",
             url: "https://medium.com/novidem-magazine/journalistic-bias-not-objectivity-holds-those-in-power-accountable-deconstructing-the-myth-of-2b09c3de517f?source=collection_home---7------0-----------------------",
-        },
-        {
-            title: "What Does It Mean To Be Asian American? A Narrative of Coronavirus, Andrew Yang, and America",
-            publication: "The Incandescent Review",
-            url: "https://www.theincandescentreview.org/post/what-does-it-mean-to-be-asian-american-a-narrative-of-coronavirus-andrew-yang-and-america",
         },
         {
             title: "How to Innovate and Create a Culture of Innovation",
@@ -40,26 +44,58 @@ export default function Writing({}: {  }) {
             title: "Why Hustle? Hustle Culture as a Survival Mechanism and Driver of Human Progress",
             url: "https://samsonzhang.medium.com/why-hustle-hustle-culture-as-a-mechanism-to-seek-belonging-and-change-the-world-6980def00678",
         },
-        {
-            title: "Media Shapes Reality: The Purpose of Journalism | Notes on Ch. 1 of \"The Elements of Journalism\"",
-            url: "https://postulate.us/@samsonzhang/p/2021-05-24-Media-Shapes-Reality%3A-The-Purpose-7kZ8unB7c2NnXYkJUVzMLV",
-        },
-        {
-            title: "Revolutionary Social-Democracy as the Vanguard of All Democratic Struggle | Notes on Chapter 3 of Lenin's \"What Is To Be Done?\"",
-            url: "https://postulate.us/@samsonzhang/p/2021-04-04-Revolutionary-Social-Democracy-as-the-Vanguard-2bgBtNg5Fso7e2rxJH4PCR",
-        },
     ];
 
     const journalism: WritingItemObj[] = [
         {
+            title: "Bruce Harrell becomes Seattle’s first elected Asian American mayor after bitter campaign",
+            publication: "The Yappie",
+            url: "https://theyappie.com/bruce-harrell-seattle-victory/",
+        },
+        {
+            title: "Aftab Pureval wins Cincinnati election in milestone for Midwest’s Asian Americans",
+            publication: "The Yappie",
+            url: "https://theyappie.com/aftab-pureval-wins-cincinnati-election-in-milestone-for-midwests-asian-americans/",
+        },
+        {
+            title: "Amazin LeThi is unapologetic about fighting for Asian and LGBTQ inclusion in sports",
+            publication: "The Yappie",
+            url: "https://theyappie.com/asian-lgbtq-sports-advocacy-amazin-lethi/",
+        },
+        {
+            title: "Palestinian poet articulates liberation: SJP hosts activist Mohammed El-Kurd",
+            publication: "The Student Life",
+            url: "https://tsl.news/palestinian-poet-activist-liberation/",
+        },
+        {
+            title: "A career preserved in time: Fossil species named for Pomona Dean Robert Gaines",
+            publication: "The Student Life",
+            url: "https://tsl.news/pomona-professor-named-after-fossil/",
+        },
+        {
+            title: "Claremont Institute defends senior fellow who advised Trump on overturning election",
+            publication: "The Student Life",
+            url: "https://tsl.news/claremont-institute-defends-john-eastman/",
+        },
+        {
+            title: "Amazin LeThi is unapologetic about fighting for Asian and LGBTQ inclusion in sports",
+            publication: "The Yappie",
+            url: "https://theyappie.com/asian-lgbtq-sports-advocacy-amazin-lethi/",
+        },
+        {
+            title: "‘The only way to survive is by taking care of one another’: Meet the AAPI activists rising above the hate",
+            publication: "The Yappie",
+            url: "https://theyappie.com/aapi-activists-rising-above-hate/",
+        },
+        {
+            title: "California greenlights $156 million budget to combat anti-Asian hate",
+            publication: "The Yappie",
+            url: "https://theyappie.com/california-aapi-hate-budget/",
+        },
+        {
             title: "‘Do some damage back’: Inside the Ronin Project’s plan to maximize AAPI political power",
             publication: "The Yappie",
             url: "https://theyappie.com/do-some-damage-back-inside-the-ronin-projects-plan-to-maximize-aapi-political-power/",
-        },
-        {
-            title: "Extraterrestrial Rainbows and Homopolar Generators: Andover Students to Compete at U.S.A. Young Physicists’ Tournament",
-            publication: "The Phillipian",
-            url: "https://phillipian.net/2019/01/11/extraterrestrial-rainbows-homopolar-generators-andover-students-compete-u-s-young-physicists-tournament/",
         },
     ];
 
@@ -69,55 +105,28 @@ export default function Writing({}: {  }) {
             publication: "The Incandescent Review, Volume 7",
             url: "https://postulate.us/@samsonzhang/p/2021-03-02-i%2C-rapist-vDS3j1YZMdMRKzTGZ6mPPC",
         },
-        {
-            title: "peppercorn (prose)",
-            url: "https://www.samsonzhang.com/2020/12/11/peppercorn.html",
-        },
-        {
-            title: "pedestal (prose)",
-            url: "https://www.samsonzhang.com/2020/04/30/pedestal.html",
-        },
     ];
 
-    const experience: HomeItemObj[] = [
-        {
-            title: "Editor",
-            serif: true,
-            place: <i>The Yappie</i>,
-            url: "https://theyappie.com/",
-        },
-        {
-            title: "Critical Writing Assoc. Editor, Critic & Columnist",
-            place: <i>The Incandescent Review</i>,
-            serif: true,
-            url: "https://www.theincandescentreview.org/",
-        },
-        {
-            title: "Executive Digital Editor",
-            place: <i>The Phillipian</i>,
-            serif: true,
-            url: "https://phillipian.net/",
-        },
-    ];
+    const experience: HomeItemObj[] = [...currentExperience, ...pastExperience].filter(d => d.serif && d.title !== "Student");
 
     return (
         <Container className="mt-16">
             <SEO title="Writing"/>
             <h1 className="font-bold text-4xl mb-2">Writing</h1>
-            <p className="text-gray2 font-serif text-2xl">Journalism, essays, prose, poetry</p>
+            <p className="text-gray2 font-serif text-2xl">Journalism and essays</p>
             <TwoColContainer>
                 <TwoColChild>
-                    <PortfolioSection heading="Essays">
-                        {essays.map(item => <WritingItem item={item}/>)}
-                    </PortfolioSection>
-                </TwoColChild>
-                <TwoColChild>
-                    <ExperienceSection experience={experience}/>
                     <PortfolioSection heading="Journalism">
                         {journalism.map(item => <WritingItem item={item}/>)}
                     </PortfolioSection>
                     <PortfolioSection heading="Creative">
                         {creative.map(item => <WritingItem item={item}/>)}
+                    </PortfolioSection>
+                </TwoColChild>
+                <TwoColChild>
+                    <ExperienceSection experience={experience}/>
+                    <PortfolioSection heading="Essays">
+                        {essays.map(item => <WritingItem item={item}/>)}
                     </PortfolioSection>
                 </TwoColChild>
             </TwoColContainer>

@@ -48,7 +48,13 @@ export const currentExperience: HomeItemObj[] = [
         serif: true,
         place: <i>The Yappie</i>,
         description: "The only independent publication dedicated to AAPI politics and power. Read by members of Congress, the White House, and leading advocacy organizations.",
-        url: "https://theyappie.com/",
+        url: "https://theyappie.com/author/samsonzhang/",
+    },
+    {
+        title: "Staff Writer",
+        serif: true,
+        place: <i>The Student Life</i>,
+        url: "https://tsl.news/author/samson-zhang/",
     },
     {
         title: "Student",
