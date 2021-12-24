@@ -18,3 +18,31 @@ body {
 .font-code {
     font-family: "DM Mono", monospace;
 }
+
+#home-substack-top {
+    background-color: #3f2649;
+}
+
+#home-substack-top:hover {
+    background-color: #2B0F36;
+}
+
+.skeudo {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #ebebeb,
+    -20px -20px 60px #ffffff;
+    transition: all 0.2s ease;
+}
+
+.skeudo:hover {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  20px 20px 60px #ebebeb,
+    -20px -20px 60px #ffffff;
+}
+
+.skeudo:focus {
+    background: #ffffff;
+    box-shadow: inset 20px 20px 60px #ebebeb,
+    inset -20px -20px 60px #ffffff;
+}
