@@ -117,16 +117,16 @@ export default function Writing({}: {  }) {
             <TwoColContainer>
                 <TwoColChild>
                     <PortfolioSection heading="Journalism">
-                        {journalism.map(item => <WritingItem item={item}/>)}
+                        {journalism.map((item, i) => <WritingItem item={item} key={`journalism${i}`}/>)}
                     </PortfolioSection>
                     <PortfolioSection heading="Creative">
-                        {creative.map(item => <WritingItem item={item}/>)}
+                        {creative.map((item, i) => <WritingItem item={item} key={`creative${i}`}/>)}
                     </PortfolioSection>
                 </TwoColChild>
                 <TwoColChild>
                     <ExperienceSection experience={experience}/>
                     <PortfolioSection heading="Essays">
-                        {essays.map(item => <WritingItem item={item}/>)}
+                        {essays.map((item, i) => <WritingItem item={item} key={`essays${i}`}/>)}
                     </PortfolioSection>
                 </TwoColChild>
             </TwoColContainer>
