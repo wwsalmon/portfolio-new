@@ -24,7 +24,7 @@ export default function Home() {
                 I also make a lot of websites and webapps: recently I've been working on <UnderlinedLink href="https://updately.us/">Updately</UnderlinedLink>, <UnderlinedLink href="https://postulate.us/">Postulate</UnderlinedLink>, and various data journalism pieces.
             </p>
             <p className="text-xl font-serif text-gray1 my-4" style={{maxWidth: 700}}>
-                If you know me from Twitter it's probably because I was the co-organizer of <UnderlinedLink href="https://twitter.com/JoinEdyfi">Edyfi's</UnderlinedLink> Mill Valley co-living house.
+                If you know me from <UnderlinedLink href="https://twitter.com/wwsalmon">Twitter</UnderlinedLink> it's probably because I was the co-organizer of <UnderlinedLink href="https://twitter.com/JoinEdyfi">Edyfi's</UnderlinedLink> Mill Valley co-living house.
             </p>
             <TwoColContainer>
                 <TwoColChild>
