@@ -46,3 +46,11 @@ body {
     box-shadow: inset 20px 20px 60px #ebebeb,
     inset -20px -20px 60px #ffffff;
 }
+
+.filmItemThumb {
+    transition: top 0.2s ease;
+}
+
+.filmItemContainer:hover .filmItemThumb {
+    top: -100%;
+}

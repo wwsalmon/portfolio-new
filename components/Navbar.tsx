@@ -45,14 +45,14 @@ export default function Navbar() {
                                 sz.
                             </a>
                         </Link>
-                        <div className="ml-auto items-center hidden sm:flex">
+                        <div className="ml-auto items-center hidden md:flex">
                             {navbarItems.map(item => (
                                 <Link href={item.link} key={item.link}>
                                     <a className="ml-8 text-lg text-gray1">{item.label}</a>
                                 </Link>
                             ))}
                         </div>
-                        <button className="ml-auto sm:hidden text-xl text-gray1" onClick={() => setNavbarOpen(true)}>
+                        <button className="ml-auto md:hidden text-xl text-gray1" onClick={() => setNavbarOpen(true)}>
                             <FiMenu/>
                         </button>
                     </div>
