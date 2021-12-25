@@ -47,7 +47,7 @@ export default function Navbar() {
                         </Link>
                         <div className="ml-auto items-center hidden sm:flex">
                             {navbarItems.map(item => (
-                                <Link href={item.link}>
+                                <Link href={item.link} key={item.link}>
                                     <a className="ml-8 text-lg text-gray1">{item.label}</a>
                                 </Link>
                             ))}
@@ -69,7 +69,7 @@ export default function Navbar() {
                         <a className="text-lg my-4 text-gray1">Home</a>
                     </Link>
                     {navbarItems.map(item => (
-                        <Link href={item.link}>
+                        <Link href={item.link} key={item.link}>
                             <a className="text-lg my-4 text-gray1">{item.label}</a>
                         </Link>
                     ))}
