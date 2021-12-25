@@ -64,14 +64,14 @@ export default function Home() {
             <TwoColContainer>
                 <TwoColChild>
                     <ItalicHeading className="mb-8 mt-24">Currently</ItalicHeading>
-                    {currentExperience.map(item => (
-                        <HomeItem item={item}/>
+                    {currentExperience.map((item, i) => (
+                        <HomeItem item={item} key={`home-currexp-${i}`}/>
                     ))}
                 </TwoColChild>
                 <TwoColChild>
                     <ItalicHeading className="mb-8 mt-24">Past</ItalicHeading>
-                    {pastExperience.map(item => (
-                        <HomeItem item={item}/>
+                    {pastExperience.map((item, i) => (
+                        <HomeItem item={item} key={`home-pastexp-${i}`}/>
                     ))}
                     <UnderlinedLink className="text-gray2" href="/szhang-resume.pdf">Full resume</UnderlinedLink>
                 </TwoColChild>
