@@ -2,13 +2,15 @@ import Container from "../components/Container";
 import SEO from "../components/SEO";
 import design from "../utils/design.json";
 import PhotoGallery from "../components/PhotoGallery";
+import H1 from "../components/H1";
+import Subheading from "../components/Subheading";
 
 export default function Design() {
     return (
         <Container className="mt-16">
             <SEO title="Design"/>
-            <h1 className="font-bold text-4xl mb-2">Design</h1>
-            <p className="text-gray2 font-serif text-2xl">Editorial, branding, interface, ads, motion graphics</p>
+            <H1>Design</H1>
+            <Subheading>Editorial, branding, interface, ads, motion graphics</Subheading>
             <PhotoGallery galleryArray={design} isDesign={true}/>
         </Container>
     );

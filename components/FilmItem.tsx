@@ -31,7 +31,7 @@ export default function FilmItem({item, className}: {item: FilmObj, className?: 
                     <div className="p-2 bg-white">
                         <span>{selectedIndex + 1}/{item.images.length}</span>
                     </div>
-                    <Link href={`/${item.slug}`}>
+                    <Link href={`/project/${item.slug}`}>
                         <a className="p-2 flex bg-white opacity-75 items-center hover:bg-black hover:text-white transition">
                             <FiPlayCircle/>
                             <span className="ml-2">

@@ -7,6 +7,8 @@ import TwoColChild from "../components/TwoColChild";
 import PortfolioSection from "../components/PortfolioSection";
 import ExperienceSection from "../components/ExperienceSection";
 import {currentExperience, pastExperience} from "../utils/experience";
+import H1 from "../components/H1";
+import Subheading from "../components/Subheading";
 
 export default function Writing({}: {  }) {
     const essays: WritingItemObj[] = [
@@ -112,8 +114,8 @@ export default function Writing({}: {  }) {
     return (
         <Container className="mt-16">
             <SEO title="Writing"/>
-            <h1 className="font-bold text-4xl mb-2">Writing</h1>
-            <p className="text-gray2 font-serif text-2xl">Journalism and essays</p>
+            <H1>Writing</H1>
+            <Subheading>Journalism and essays</Subheading>
             <TwoColContainer>
                 <TwoColChild>
                     <PortfolioSection heading="Journalism">

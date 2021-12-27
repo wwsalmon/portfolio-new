@@ -6,6 +6,8 @@ import PortfolioSection from "../components/PortfolioSection";
 import {CodeItemObj, HomeItemObj} from "../utils/types";
 import CodeItem from "../components/CodeItem";
 import ExperienceSection from "../components/ExperienceSection";
+import H1 from "../components/H1";
+import Subheading from "../components/Subheading";
 
 export default function Building() {
     const packages: CodeItemObj[] = [
@@ -136,8 +138,8 @@ export default function Building() {
     return (
         <Container className="mt-16">
             <SEO title="Code & Building"/>
-            <h1 className="font-bold text-4xl mb-2">Code & Building</h1>
-            <p className="text-gray2 font-serif text-2xl">Fullstack engineering, product, and UI/UX work</p>
+            <H1>Code & Building</H1>
+            <Subheading>Fullstack engineering, product, and UI/UX work</Subheading>
             <TwoColContainer>
                 <TwoColChild>
                     <PortfolioSection heading="Projects">

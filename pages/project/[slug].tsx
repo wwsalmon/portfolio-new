@@ -1,14 +1,14 @@
 import {GetServerSideProps} from "next";
 import {ssr404} from "next-response-helpers";
-import films from "../utils/film.json";
-import {FilmObj} from "./film";
-import Container from "../components/Container";
-import SEO from "../components/SEO";
+import films from "../../utils/film.json";
+import {FilmObj} from "../film";
+import Container from "../../components/Container";
+import SEO from "../../components/SEO";
 import Link from "next/link";
 import {FiArrowLeft} from "react-icons/fi";
-import YTEmbed from "../components/YTEmbed";
-import ItalicHeading from "../components/ItalicHeading";
-import FilmItem from "../components/FilmItem";
+import YTEmbed from "../../components/YTEmbed";
+import ItalicHeading from "../../components/ItalicHeading";
+import FilmItem from "../../components/FilmItem";
 
 export const Divider = () => (
     <div className="w-12 h-1 bg-black my-10"/>
