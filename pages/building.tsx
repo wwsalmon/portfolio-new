@@ -102,6 +102,34 @@ export default function Building() {
             url: "/",
         },
         {
+            name: "YouTube Liberation",
+            description: "Chrome extension to liberate you from the infinite distraction cycle of YouTube.",
+            tags: ["js", "chrome extension"],
+            images: ["ytl.jpg"],
+            url: "https://chrome.google.com/webstore/detail/youtube-liberation-anti-d/akmmhbokbfhghenajahbcmogcbghiamg",
+        },
+        {
+            name: "Auto Turner",
+            description: "A mechanical page turner for musicians. The final result of Cooper Union's 6 week product design and prototyping Makerspace class in the Summer STEM 2018 program.",
+            tags: ["3d printing", "laser cutting"],
+            images: ["autoturner.gif"],
+            url: "https://www.youtube.com/watch?v=c5Udwl8OnfE",
+        },
+        {
+            name: "DIY Motorized Camera Gimbal",
+            description: "Building a motorized 3-axis gimbal to stabilize cameras for filmmaking using 3D printing and laser cutting.",
+            tags: ["3d printing", "laser cutting", "microcontrollers"],
+            images: ["gimbal.gif"],
+            url: "https://www.youtube.com/watch?v=bW62-upWoQY",
+        },
+        {
+            name: "Small Form Factor Ryzen PC Build",
+            description: "A custom PC the size of a shoebox, but with a Ryzen R5 2600 and GTX 1060 for twice the power of my old build.",
+            tags: ["pc build"],
+            images: ["sff.jpg"],
+            url: "https://www.youtube.com/watch?v=IWN766R4YTI",
+        },
+        {
             name: "Question Journal",
             description: "A notetaking app that helps you answer your biggest questions. Question Journal lets you document your questions and notes about them over time, centering curiosity in your learning.",
             tags: ["react", "next", "mongodb"],
@@ -109,12 +137,19 @@ export default function Building() {
             url: "https://questionjournal.vercel.app/",
         },
         {
+            name: "The Phillipian",
+            description: "Rebuilt Phillips Academy's student publication's WordPress site template from scratch, supporting over 15,000 historical articles and 80-100 new ones uploaded each week, along with multimedia content.",
+            tags: ["wordpress", "php"],
+            images: ["phillipian.png"],
+            url: "https://phillipian.net/",
+        },
+        {
             name: "Morse WP Theme",
             description: "A WordPress theme custom-made for small newspapers. Built with versatility, ease of use, and maintainability in mind.",
             tags: ["wordpress", "php", "sass"],
             images: ["morse.jpg"],
             url: "https://github.com/wwsalmon/morse-wp-theme",
-        },
+        }
     ];
 
     const experience: HomeItemObj[] = [
@@ -139,7 +174,7 @@ export default function Building() {
         <Container className="mt-16">
             <SEO title="Code & Building"/>
             <H1>Code & Building</H1>
-            <Subheading>Fullstack engineering, product, and UI/UX work</Subheading>
+            <Subheading>Fullstack engineering, product, and UI/UX work...and some hardware if you scroll down enough</Subheading>
             <TwoColContainer>
                 <TwoColChild>
                     <PortfolioSection heading="Projects">
