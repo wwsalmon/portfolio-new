@@ -33,7 +33,7 @@ export default function BlogItem({post}: { post: BlogPostProps }) {
                     </div>
                 </div>
                 <Link href="">
-                    <a className="font-bold opacity-30 hover:opacity-100 uppercase ml-auto">{Math.round(readingTime)} min read &gt;</a>
+                    <a className="font-bold opacity-30 hover:opacity-100 uppercase ml-auto">{Math.max(Math.round(readingTime), 1)} min read &gt;</a>
                 </Link>
             </div>
         </div>
