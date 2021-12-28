@@ -1,8 +1,17 @@
 import "../styles/globals.css";
-import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import Contact from "../components/Contact";
+import NProgress from "nprogress";
+import "../styles/nprogress.css";
+import {Router} from "next/router";
+
+Router.events.on("routeChangeStart", (url) => {
+    console.log(`Loading: ${url}`)
+    NProgress.start()
+});
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 function MyApp({Component, pageProps}) {
     return (
