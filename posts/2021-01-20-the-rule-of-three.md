@@ -5,7 +5,7 @@ tags: productivity
 date: '2021-01-20 12:09:10'
 ---
 
-![]({{ site.baseurl }}/img/blog/2021-01/ruleofthree.png)
+![](/blog/2021-01/ruleofthree.png)
 
 "Most people can handle one or two priorities at a time. A TKS kid can handle three," says Nadeem.
 
@@ -19,7 +19,7 @@ My life changed when Boston director Michael Raspuzzi responded to my questions 
 
 Priorities weren't new to me, but having only three was. Over the summer, I drew up a priority list/map that looked like this:
 
-![]({{ site.baseurl }}/img/blog/2021-01/mindmap-5-26.jpg)
+![](/blog/2021-01/mindmap-5-26.jpg)
 
 (You can see that I actually ended up highlighting three priorities amidst the mess...)
 

@@ -6,7 +6,7 @@ tags: personal musing
 date: '2021-01-01 11:35:40'
 ---
 
-![]({{ site.baseurl }}/img/blog/2021-01/fireworks.png)
+![](/blog/2021-01/fireworks.png)
 
 *a journal entry I wrote on NYE*[^rough]
 

@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = ({params}) => {
     return {
         props: {
             title: thisFm.attributes.title,
-            date: thisFm.attributes.date,
+            date: thisFm.attributes.date || null,
             tags: thisFm.attributes.tags ? thisFm.attributes.tags.split(" ") : [],
             body: thisFm.body,
             filename: filename,

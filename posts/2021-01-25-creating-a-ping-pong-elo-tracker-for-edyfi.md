@@ -5,7 +5,7 @@ tags: project code edyfi
 date: '2021-01-25 13:24:59'
 ---
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/final.jpg)
+![](/blog/2021-01/edyfi-elo/final.jpg)
 
 At the community house [Edyfi](https://edyfi.co/85e37d59e0064c8d8f4f2cb91168eb18), we have a ping pong table. As soon as quanratine ended, we started playing a lot of ping pong.
 
@@ -17,7 +17,7 @@ Immediately, my mind went to creating a React app. Ben recommended we look for a
 
 I got as far as typing `create-next-app` into my terminal before restraining myself again. React is so heavy, surely there was a way to do this without React. We would need a database, too. Here, my mind went to AirTable. I set up a table and put in existing games pretty quickly, with a couple of nice fields like auto-incrementing IDs, creation datetime, and winning player determined by score.
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/airtable.jpg)
+![](/blog/2021-01/edyfi-elo/airtable.jpg)
 
 I then set about looking how to calculate Elo through AirTable, but confronted with the difficulty of using formulas across tables and the heft of developing an AirTable app to use scripts, I gave up and decided to use AirTable's API and handle calculations separately.
 
@@ -54,7 +54,7 @@ export async function getServerSideProps(ctx) {
 }
 ```
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/browser.jpg)
+![](/blog/2021-01/edyfi-elo/browser.jpg)
 
 ## Calculating Elo
 With some nice ES6 array operations, we first get a list of unique players from the game records, then initialize an object with each player's Elo rating:
@@ -70,11 +70,11 @@ let playerElos = Object.fromEntries(allPlayers.map(d => [d, 1000]));
 console.log(playerElos);
 ```
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/ratings.jpg)
+![](/blog/2021-01/edyfi-elo/ratings.jpg)
 
 Now we just need to run through all the games and use the Elo formula to calculate the Elo for each player:
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/elo-formula.png)
+![](/blog/2021-01/edyfi-elo/elo-formula.png)
 
 (Credit: [https://www.coorpacademy.com/en/blog/learning-innovation-en/elo-whos-the-best/](https://www.coorpacademy.com/en/blog/learning-innovation-en/elo-whos-the-best/))
 
@@ -96,7 +96,7 @@ for (let game of games.sort((a, b) => +new Date(a["Date"]) < +new Date(b["Date"]
 }
 ```
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/elos.jpg)
+![](/blog/2021-01/edyfi-elo/elos.jpg)
 
 ## Displaying Elo and games
 First, let's refactor the earlier calculations into a state variable and `useEffect` hook:
@@ -194,7 +194,7 @@ For styling, I went with [`water.css`](https://watercss.kognise.dev/), a classle
 
 I'll stop here for this basic implementation, but there's much more that can be done with this interface (some updates, like win/loss counts, are shown in the final image at the top of this post)! Per-game Elo, specific matchup records, player win/loss records, etc. That's just a matter of more lines of code, though, so I won't document it that thoroughly.
 
-![]({{ site.baseurl }}/img/blog/2021-01/edyfi-elo/prototype.jpg)
+![](/blog/2021-01/edyfi-elo/prototype.jpg)
 
 From here, it was a super easy one-click deploy to Vercel, and the site was live for all the members of the house to use. Productivity has since tanked.
 

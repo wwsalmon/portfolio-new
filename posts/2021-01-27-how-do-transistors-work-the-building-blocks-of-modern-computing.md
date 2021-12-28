@@ -15,39 +15,39 @@ We'll start by understanding how diodes work. You'll see how this relates to tra
 
 Diodes are elements that only allow current to flow one way in a circuit. In the diagram below, the diode in the left circuit is "forward-biased", so current flows and the lightbulb lights up. The diode in the right circuit is "reverse-biased", so no current flows and the lightbulb remains unlit.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/diodes.png)
+![](/blog/2021-01/transistor/diodes.png)
 
 Diodes function using something called the "PN junction." P and N refer to two types of silicon semiconductor material.
 
 On its own, silicon has four valence electrons. In a crystal lattice, silicon forms stable bonds with four other silicon atoms around it. There are no free electrons and thus no conductivity of electricity.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/silicon.jpg)
+![](/blog/2021-01/transistor/silicon.jpg)
 
 To make silicon useful, we have to inject another kind of atom to allow for free electron flow. This injection is referred to as either "N-doping" or "P-doping".
 
 In N-doping, an atom with five electrons, such as phosphorous, is injected. Four of these electrons form stable bonds with surrounding silicon atoms, but the fifth electron is now free to move around the lattice.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/n-doped.jpg)
+![](/blog/2021-01/transistor/n-doped.jpg)
 
 In P-doping, an atom with three electrons, such as boron, is injected. The three electrons form bonds with surrounding silicon atoms, but now there is a "hole" to which other electrons can move to fill.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/p-doped.jpg)
+![](/blog/2021-01/transistor/p-doped.jpg)
 
 In a diode, N-doped and P-doped silicon are stacked next to each other. The free electrons in the N-doped silicon are attracted to the holes in the P-doped silicon, and start moving across the divide. When they cross the divide, they fill the holes in the P side. Now there's a negative charge on the P side of the divide, and electrons from the N side are repelled from rather than attracted to the P side. Thus, electrons stop flowing to the P side, and at equilibrium a depletion layer is formed with a potential difference of 0.7 V.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/diode1.jpg)
+![](/blog/2021-01/transistor/diode1.jpg)
 
 When a voltage of greater than 0.7 V is applied across the diode, the potential difference of the depletion layer is overcome, and electrons are able to make the jump from the N to the P side, completing the circuit and creating a current.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/diode2.jpg)
+![](/blog/2021-01/transistor/diode2.jpg)
 
 When a voltage of the opposite direction is applied, the depletion layer widens: electrons on the N side are attracted to the positive terminal of the voltage source, and holes on the P side to the negative terminal. Thus, there is no electron flow and no current.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/diode3.jpg)
+![](/blog/2021-01/transistor/diode3.jpg)
 
 Diodes are useful for a variety of purposes, such as rectifying AC to DC power:
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/rectifier.jpg)
+![](/blog/2021-01/transistor/rectifier.jpg)
 
 ## Bipolar Junction Transistor
 
@@ -73,22 +73,22 @@ For computer chips, though, BJTs are still too bulky. Another kind of transistor
 
 FETs look a little different from BJTs:
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/fet1.jpg)
+![](/blog/2021-01/transistor/fet1.jpg)
 
 Our N and P layers are still present, along with two terminals attached to each of the N layers. Instead of a second loop connected directly to the P layer, though, the third terminal of a FET is the "gate", prevented from contacting the N or P layers directly by an insulator.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/fet2.jpg)
+![](/blog/2021-01/transistor/fet2.jpg)
 
 As before, a depletion layer is formed between the N and P layers. When a voltage is applied across the two N terminals, no current is able to flow.
 
 When a positive voltage is applied to the gate, the field created eliminates the depletion layer in a region between the two N terminals, allowing electrons to flow and closing the circuit. Thus, as before, the FET functions as a switch.
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/fet3.jpg)
+![](/blog/2021-01/transistor/fet3.jpg)
 
 A particular type of FET, metal-oxide-semiconductor field-effect transistors, or MOSFETs, are credited with revolutionizing the electronics industry and kicking off the age of modern computing. Invented by Mohamed Atalla and Dawon Kahng at Bell Labs in 1959, MOSFETs have since become the most frequently manufactured device in history, with 13 sextillion -- that's 13e21 -- manufactured to date.
 
 To see concretely how transistors are used in computers, consider basic logic gates like AND and OR. From these gates, all components of a computer system -- memory, storage, processing -- can be built. In turn, logic gates can be constructed out of basic transistor circuits:
 
-![]({{ site.baseurl }}/img/blog/2021-01/transistor/gates.png)
+![](/blog/2021-01/transistor/gates.png)
 
 Thus, with FETs, millions and billions of logic gates can be crammed onto IC chips, memory modules, solid-state storage devices, and more, powering the electronics around us.

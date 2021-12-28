@@ -1,11 +1,12 @@
 import {GetStaticProps} from "next";
 import {BlogPostProps} from "../[year]/[month]/[day]/[slug]";
 import Container from "../../components/Container";
-import BlogItem from "../../components/BlogItem";
+import BlogItem, {getDateFromBlogPostProps} from "../../components/BlogItem";
 import SEO from "../../components/SEO";
 import H1 from "../../components/H1";
 import Subheading from "../../components/Subheading";
 import BlogTag from "../../components/BlogTag";
+import Masonry from "react-masonry-component";
 
 export const getStaticProps: GetStaticProps = () => {
     const fs = require("fs");
@@ -37,11 +38,11 @@ export default function Blog({posts}: {posts: BlogPostProps[]}) {
             <div className="my-6">
                 {tags.map(tag => <BlogTag tag={tag} count={posts.filter(d => d.tags.includes(tag)).length}/>)}
             </div>
-            <div>
-                {posts.map(post => (
+            <Masonry className="mt-20 -mx-8">
+                {posts.sort((a, b) => +getDateFromBlogPostProps(b) - +getDateFromBlogPostProps(a)).map(post => (
                     <BlogItem post={post} key={post.title}/>
                 ))}
-            </div>
+            </Masonry>
         </Container>
     )
 }

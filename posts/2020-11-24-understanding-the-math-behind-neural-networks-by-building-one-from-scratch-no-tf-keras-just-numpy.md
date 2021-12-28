@@ -26,7 +26,7 @@ If you just want to see the code and don't need a ton of explanation, have a loo
 
 The dataset we're working with is the famous MNIST handwritten digit dataset, commonly used for instructive ML and computer vision projects. It contains 28 x 28 grayscale images of handwritten digits that look like this: 
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn.png)
+![](/blog/2020-11/nn.png)
 
 Each image is accompanied by a label of what digit it belongs to, from 0 to 9. Our task is to build a network that takes in an image like this and predicts what digit is written in it.
 
@@ -42,7 +42,7 @@ In a deeper network, there may be multiple hidden layers back to back before the
 
 The output layer also has 10 nodes, corresponding to each of the output classes (digits 0 to 9). The value of each of these nodes will again be calculated from weights and biases applied to the value of the 10 nodes in the hidden layer, with a softmax activation applied to them to get the final output.
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn1.png)
+![](/blog/2020-11/nn1.png)
 
 The process of taking an image input and running through the neural network to get a prediction is called **forward propagation.** The prediction that is made from a given image depends on the **weights and biases, or parameters,** of the network.
 
@@ -62,7 +62,7 @@ These vectors can be stacked together in a matrix to carry out vectorized calcul
 
 In most contexts, including for machine learning, the convention is to stack these vectors as rows of the matrix, giving the matrix dimensions of $$m \: \text{rows} \times n \: \text{columns}$$, where $$m$$ is the number of training examples and $$n$$ is the number of features, in this case 784. To make our math easier, we're going to transpose this matrix, giving it dimensions $$n \times m$$ instead, with each column corresponding to a training example and each row a training feature.
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn2.png)
+![](/blog/2020-11/nn2.png)
 
 ### Representing weights and biases
 
@@ -90,7 +90,7 @@ Imagine that we didn't do anything to $$Z^{[1]}$$ now, and multiplied it by $$W^
 
 To prevent this reduction and actually add complexity with our layers, we'll run $$Z^{[1]}$$ through a non-linear activation function before passing it off to the next layer. In this case, we'll be using a function called a rectified linear unit, or ReLU:
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn3.png)
+![](/blog/2020-11/nn3.png)
 
 ReLU is a really simple function: it's linear if the input value is above 0, and outputs 0 otherwise. Just this much, though, is enough to ensure that our model doesn't collapse to a linear one.
 
@@ -108,7 +108,7 @@ Then, we'll apply an activation function to $$Z^{[2]}$$ to get our final output.
 
 If this second layer were just another hidden layer, with more hidden layers or an output layer after it, we would apply ReLU again. But since it's the output layer, we'll apply a special activation function called softmax:
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn4.png)
+![](/blog/2020-11/nn4.png)
 
 Diagram by [Bartosz Szabłowski](https://towardsdatascience.com/softmax-activation-function-explained-a7e1bc3ad60) on Towards Data Science
 
@@ -167,7 +167,7 @@ I won't explain all the details of the math, but you can get some intuitive hint
 
 Since our activation function is ReLU, our derivative is actually pretty simple. Let's revisit our graph:
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn3.png)
+![](/blog/2020-11/nn3.png)
 
 When the input value is greater than 0, the activation function is linear with a derivative of 1. When the input value is less than 0, the activation function is horizontal with a derivative of 0. Thus, $$g^{[1]\prime}(Z^{[1]})$$ is just a matrix of 1s and 0s based on values of $$Z^{[1]}$$.
 
@@ -309,11 +309,11 @@ In the Kaggle notebook, with a training dataset of 41,000 examples, this model a
 
 A few prediction examples:
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn5.png)
+![](/blog/2020-11/nn5.png)
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn6.png)
+![](/blog/2020-11/nn6.png)
 
-![]({{ site.baseurl }}/img/blog/2020-11/nn7.png)
+![](/blog/2020-11/nn7.png)
 
 ## Conclusion
 

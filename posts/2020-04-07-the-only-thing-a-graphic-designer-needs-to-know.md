@@ -12,7 +12,7 @@ or, How To Break Through And Create Amazing Graphics / or, intuition derived fro
 
 [X] is an amazing graphic designer. He can whisk beautiful icons, illustrations, and patterns out of thin air, take an assignment and turn it into beautiful eye candy to use as a logo or printed on a t-shirt. [Z], too; beyond her beautiful graphics for our paper, her spotify playlist covers have a pristine aesthetic. Yet, when it comes to info-heavy graphics, websites, posters, and more advanced layouts, they struggle. The graphic-y parts are gorgeous as always, but something about the spacing, the fonts, the composition, just feels tacky and amateurish, deft and experienced as the designers are.
 
-![]({{ site.baseurl }}/img/blog/2020-04/b-graphics.png)
+![](/blog/2020-04/b-graphics.png)
 
 I’m not the greatest at the free-flowing, artistic side of graphic design. At best, I spend way too much time tracing and refining a sketch, or ask a friend to help. I first learned design by making interface mockups, concept redesigns of popular programs, websites, operating system UIs. Like artists who diligently consume the work of other artists, learn from the greats and read up on theory, I learned from software designers and UI/UX researchers. As I moved into branding, editorial design, advertisements, posters, social media graphics, you name it (just for small projects and clients — I claim no real professional education or experience), I brought a completely different intuition. With a pen tool in Illustrator, I struggle a little; but that gap in presentation, that off-putting tackiness, is exactly what I knew how to address.
 
@@ -30,11 +30,11 @@ Gestalt principles are most powerful not when used in isolation to achieve a spe
 
 How do you apply these principles? Let my examples for *The Phillipian*’s Graphic Style Guide demonstrate:
 
-![]({{ site.baseurl }}/img/blog/2020-04/gestalt1.png)
+![](/blog/2020-04/gestalt1.png)
 
-![]({{ site.baseurl }}/img/blog/2020-04/gestalt2.png)
+![](/blog/2020-04/gestalt2.png)
 
-![]({{ site.baseurl }}/img/blog/2020-04/gestalt3.png)
+![](/blog/2020-04/gestalt3.png)
 
 In the realm of a contained illustration, logo, or simple social media graphic, you can rely on artistic intuition to deliver you to something that looks good and is effective. But across a larger poster, magazine cover, infographic, or website, with tons of elements that need to be carefully placed, balanced, and adjusted, it’s critical to think through your design decisions and know what they’re doing.
 

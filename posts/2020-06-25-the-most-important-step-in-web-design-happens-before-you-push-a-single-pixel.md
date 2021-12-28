@@ -5,7 +5,7 @@ date: '2020-06-25 12:02:07'
 tags: design essay
 ---
 
-![Thumbnail for post]({{ site.baseurl }}/img/blog/2020-06/s4f-thumb.jpg)
+![Thumbnail for post](/blog/2020-06/s4f-thumb.jpg)
 
 This post's claim: **client research is the most important step to take when designing a website**. You should do it every time, before you make a single sketch or mockup, before you touch a single line of code. Your clients will be happier, your designs will be prettier, you'll become a better designer.
 
@@ -21,15 +21,15 @@ I joined Stem4Free as what else but the website design team manager, except ther
 
 So I got to work, playing around with the existing logo, pulling colors and trying font combinations:
 
-![Brand explorations for Stem4Free]({{ site.baseurl }}/img/blog/2020-06/brand.png)
+![Brand explorations for Stem4Free](/blog/2020-06/brand.png)
 
 For the website, I interpreted my task as making the website, well, look nicer. I looked through a bunch of other nonprofits' websites, looked over the copy on the existing website, and threw together a mockup in Illustrator:
 
-![Mockup of v1 of website]({{ site.baseurl }}/img/blog/2020-06/v1mockup.jpg)
+![Mockup of v1 of website](/blog/2020-06/v1mockup.jpg)
 
 This was, more or less, the website that I built:
 
-![Live v1 of website]({{ site.baseurl }}/img/blog/2020-06/v1live.jpg)
+![Live v1 of website](/blog/2020-06/v1live.jpg)
 
 Alright, my WordPress/frontend skills are still pretty solid. Those blocks on the front page even use some lightly-styled Gutenberg blocks with a Custom Post Type to make them easy to update!
 
@@ -43,11 +43,11 @@ The superweapon to doing design right is simple — do client research. Do it be
 
 What should you accomplish with client research? Get to actually know your client. Know their story, their purpose statement, the people they interact with, the impression they want to give off.
 
-![Interview questions screenshot 1]({{ site.baseurl }}/img/blog/2020-06/interview1.png)
+![Interview questions screenshot 1](/blog/2020-06/interview1.png)
 
 some questions
 
-![Interview questions screenshot 2]({{ site.baseurl }}/img/blog/2020-06/interview2.png)
+![Interview questions screenshot 2](/blog/2020-06/interview2.png)
 
 some answers
 
@@ -57,11 +57,11 @@ The client usually isn't clear on every part of what they want to communicate �
 
 As an illustration of this, a powerful question is to ask for adjectives that *do* and *don't* (this is often where the real clarity come from) describe the client's brand. Vague ideas clarify into distinct characteristics:
 
-![Interview questions screenshot 3]({{ site.baseurl }}/img/blog/2020-06/interview3.png)
+![Interview questions screenshot 3](/blog/2020-06/interview3.png)
 
 Asking about competition, too, identifies how to strengthen messaging:
 
-![Interview questions screenshot 4]({{ site.baseurl }}/img/blog/2020-06/interview4.png)
+![Interview questions screenshot 4](/blog/2020-06/interview4.png)
 
 Now we know what's important. We know what we want to say. Only now are you ready to do the rest of your job, building the way to say it.
 
@@ -73,7 +73,7 @@ Only put in what matters. Build a clear hierarchy. Visitors should know exactly 
 
 Here's the homepage that I designed the second time around, live at stem4free.org:
 
-![Website v2 homepage]({{ site.baseurl }}/img/blog/2020-06/v2home.jpg)
+![Website v2 homepage](/blog/2020-06/v2home.jpg)
 
 Bam, number to the face. We have a real impact. Above, a straightforward introduction. Below, live stats on donations, because we want to communicate that we're active and reputable. Below that, our clear main call to action — join as a volunteer! If you're a business, join as a partner! And then updates and blog posts, because again, we're active and reputable. The messaging is focused and clear.
 
@@ -85,7 +85,7 @@ Obviously these aren't generalized rules. Hero images and graphics can be really
 
 Aside from the homepage, branch pages were an important feature of the redesign:
 
-![Website v2 branch page]({{ site.baseurl }}/img/blog/2020-06/v2branch.jpg)
+![Website v2 branch page](/blog/2020-06/v2branch.jpg)
 
 They're really simple, but they contain the information that matters. The idea came from the client research, of course — give prospective volunteers and businesses a centralized branch info page. See the localized stats, see the directors' faces and contact info.
 

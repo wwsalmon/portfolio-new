@@ -6,7 +6,7 @@ date: '2020-12-14 02:58:16'
 tags: musing personal
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-12/exponential.png)
+![](/blog/2020-12/exponential.png)
 
 October was a grind month. It was my first month as a PM at StartupTree, doing lots of customer interviews, UX research, and proving myself to the team. I was working on a three-week consulting project with $45B biotech giant Illumina, learning what a consulting project even as as I did it. On top of that, I had early decision college apps to write.
 
@@ -299,11 +299,11 @@ Now I know that I'm overworking, or at least trying to, so I'm again trying to c
 
 So is it a never-ending cycle? A sine wave, or perhaps a slightly messed up sine wave, like this?
 
-![]({{ site.baseurl }}/img/blog/2020-12/sine1.png)
+![](/blog/2020-12/sine1.png)
 
 It's a good starting point for a model, but I believe that a better reflection would be a damped oscillation, where the amplitude of overworking or underworking decreases with time.
 
-![]({{ site.baseurl }}/img/blog/2020-12/sine2.png)
+![](/blog/2020-12/sine2.png)
 
 The implication of this model is that there exists some equilibrium point where you don't feel like you're overworking or underworking, and that you'll reach it with time. The two things that will allow you to reach that equilibrium point:
 

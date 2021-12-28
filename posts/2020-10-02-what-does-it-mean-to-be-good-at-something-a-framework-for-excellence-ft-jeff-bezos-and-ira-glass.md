@@ -7,7 +7,7 @@ tags: essay personal
 image: "/img/blog/2020-10/excellence-cover.png"
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-10/excellence-cover.png)
+![](/blog/2020-10/excellence-cover.png)
 
 One of the questions that resurfaced many times in my mind this year was that of defining excellence. Having gone to a highly selective private high school, I was surrounded by excellence.[^richandsmart] "I didn't have enough space on my application to fit all my achievements," a friend told me of her application to the school: she had won math, writing, and piano competitions and was a star violinist and figure skater. Others had their own heaps of accomplishments and excellencies, earning them instant approval from peers and adults around them.
 

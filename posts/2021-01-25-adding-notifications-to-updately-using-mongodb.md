@@ -5,7 +5,7 @@ tags: code project
 date: '2021-01-25 13:24:59'
 ---
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/follow.jpg)
+![](/blog/2021-01/updately-notifications/follow.jpg)
 
 My personal favorite feature in [the 0.3.0 release of Updately](https://preview.mailerlite.com/q7e6t2) was comments. Updately is meant to be a social platform, but there was previously no way to interact with others' posts other than viewing them. Discussion was facilitated, but on different platforms. Comments brought Updately one step closer to being a social platform in its own right.
 
@@ -137,9 +137,9 @@ if (newComment.isSubComment) {
 
 Now, if I go to my sister's update and post a comment, a notification document is added to the notifications collection in MongoDB Atlas.
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/posting-comment.jpg)
+![](/blog/2021-01/updately-notifications/posting-comment.jpg)
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/posting-comment-atlas.jpg)
+![](/blog/2021-01/updately-notifications/posting-comment-atlas.jpg)
 
 ## 3. Fetch notifications
 
@@ -311,11 +311,11 @@ Then, I added a dropdown menu to it, using some utility classes I had already de
 
 And voila! We have a notification dropdown that works great on desktop and mobile. Clicking the notification takes you to the update with the comment.
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/bell2.jpg)
+![](/blog/2021-01/updately-notifications/bell2.jpg)
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/notif.jpg)
+![](/blog/2021-01/updately-notifications/notif.jpg)
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/notif2.jpg)
+![](/blog/2021-01/updately-notifications/notif2.jpg)
 
 ## 5. Mark notifications as read
 First, I made an api route `/api/read-notifications`, to which a notification ID can be posted to mark it as read.
@@ -415,7 +415,7 @@ I also wrapped each notification menu item in a div making the notification half
 
 With that, we have, more or less, a complete working notification system!
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/half-opacity.jpg)
+![](/blog/2021-01/updately-notifications/half-opacity.jpg)
 
 ## 6. Clear out old notifications
 
@@ -447,4 +447,4 @@ It's easy to extend this system to new types of notifications, too. For example,
 
 Hopefully this post is a helpful example of how you might implement your own notification system using MongoDB!
 
-![]({{ site.baseurl }}/img/blog/2021-01/updately-notifications/follow.jpg)
+![](/blog/2021-01/updately-notifications/follow.jpg)

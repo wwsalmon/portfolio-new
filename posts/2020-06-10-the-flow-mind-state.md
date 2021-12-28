@@ -18,7 +18,7 @@ What is flow? "A flow state, also known colloquially as being in the zone, is th
 
 Here's the insightful bit about flow:
 
-![Graph of flow against skill and difficulty. Flow state occurs on the diagonal line rising from bottom left to top right]({{ site.baseurl }}/img/blog/2020-06/flow1.png)
+![Graph of flow against skill and difficulty. Flow state occurs on the diagonal line rising from bottom left to top right](/blog/2020-06/flow1.png)
 
 Source: [https://improvingslowly.com/](https://improvingslowly.com/)
 
@@ -26,7 +26,7 @@ Think about a high skill, low difficulty task — say you're a talented watercol
 
 There's a whole body of research called positive psychology that the concept of flow is a part of that, full disclosure, I know almost nothing about. As an example, here's a fuller, more nuanced diagram plotting flow and other mental states against skill and difficulty/challenge:
 
-![A more complicated graph showing regions marked flow, anxiety, boredom, relaxation, arousal, and other mind states against skill and difficulty]({{ site.baseurl }}/img/blog/2020-06/flow2.png)
+![A more complicated graph showing regions marked flow, anxiety, boredom, relaxation, arousal, and other mind states against skill and difficulty](/blog/2020-06/flow2.png)
 
 Source: Wikipedia
 

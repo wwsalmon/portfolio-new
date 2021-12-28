@@ -31,11 +31,11 @@ In retrospect, of course, it's obvious how silly the little-kid kind of tech obs
 
 I've realized this as a software engineer. I work in a shared office space in downtown New York. The guy in the office next to me has a computer that looks like this, beautifully displayed in the glass window to the hallway:
 
-![]({{ site.baseurl }}/img/blog/2020-12/rgb.jpg)
+![](/blog/2020-12/rgb.jpg)
 
 My computer, on the other hand, looks like this:
 
-![]({{ site.baseurl }}/img/blog/2020-12/sff.jpg)
+![](/blog/2020-12/sff.jpg)
 
 To a tech nerd, my build might actually be cooler than his. His is a standard, boxy ATX build. Mine is a tiny, painstakingly-built mini-ITX PC that turned my old mATX PC into something I can fit in my backpack (or just a smaller suitcase, as it is). A video I made on this build has 20K views, steadily bringing in more views even two years later.
 
@@ -53,7 +53,7 @@ My shoebox build is beautiful, humble, and still blazing fast for everything I n
 
 My setup is gorgeous — again, everything I dreamed of a few years ago. But it's only that. I've been using that mechanical keyboard, without any backlighting or fanciness, since I got it four years ago. The monitor, too, has been around since the beginning, and the mic is the same model as the mic my dad bought for me when I was in elementary school. My MX Master — the nicest, techiest mouse in existence — I sold to a friend at school, and now I use a $10 gaming mouse my mom bought off of Amazon.
 
-![]({{ site.baseurl }}/img/blog/2020-12/setup.jpg)
+![](/blog/2020-12/setup.jpg)
 
 Don't get me wrong, I know that this is a ludicrously nice setup. It came from my upper-middle-class family that was able to drop a couple thousand dollars on things that make my life easier. I'm only now starting to make my own money and purchases.
 

@@ -6,7 +6,7 @@ date: '2020-07-11 15:03:12'
 ---
 
 <a href="https://www.producthunt.com/posts/sz-project-tracker" target="_blank" style="border-bottom: 0;">
-	![]({{ site.baseurl }}/img/blog/2020-07/szpt-ph.jpg)
+	![](/blog/2020-07/szpt-ph.jpg)
 	</a>
 
 *Also posted on [IndieHackers](https://www.indiehackers.com/post/from-fearing-react-to-ph-webapp-launch-in-2-months-8b9f102b7c) and [DEV.to](https://dev.to/wwsalmon/from-fearing-react-to-ph-webapp-launch-in-2-months-4d58). See the project case study [here]({{ site.baseurl }}/sz-project-tracker)*

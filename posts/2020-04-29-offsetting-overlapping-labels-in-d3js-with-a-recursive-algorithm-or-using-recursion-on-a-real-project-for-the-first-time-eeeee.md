@@ -6,7 +6,7 @@ tags: project code
 date: '2020-04-29 13:46:45'
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-04/raise3.png)
+![](/blog/2020-04/raise3.png)
 
 What is recursion? Simply a function that calls itself. As an example, here’s a recursive algorithm for calculating factorials:
 
@@ -30,7 +30,7 @@ As such, the comfort I gained working with arrays on seemingly arbitrary problem
 Here’s the starting point. Nice simple stackedBarChart, and I was just starting to implement labels:
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/startingpoint.png)
+![](/blog/2020-04/startingpoint.png)
 
 
 The code so far is straightforward. First, I create a polyline, for now with just two points, going from the center of each bar to a certain amount above it. Then, above each of these lines, I render the appropriate text label, and push the right bound of each text label to an array. These right bounds are used to calculate the third point of the polyline, ending right where the text does. (Not sure why it’s not working for “Both” in the example above whoops)
@@ -77,19 +77,19 @@ chartGroups.selectAll(".sota-stackedBarChart-label-aboveBar-line")
 So, okay! Clearly the labels overlapping is a problem. A reference from previous print versions of the survey provide guidance on how to fix this:
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/ref1.png)
+![](/blog/2020-04/ref1.png)
 
 
 Not the above/below thing — we’ll keep all the labels above for simplicity. But the “Yes, on campus” and “Yes, off campus” labels provide a perfect model for how to offset the labels so they don’t overlap: raise the height of the first overlapping label, and move the second overlapping label right until it no longer overlaps. Time to code it!
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/raise1.png)
+![](/blog/2020-04/raise1.png)
 
 
 Whoops, that’s not right!
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/raise2.png)
+![](/blog/2020-04/raise2.png)
 
 
 There we go.
@@ -192,13 +192,13 @@ If it does overlap, or is closer than a specified margin, then we must raise the
 Sounds good. Does it actually work?
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/raise2.png)
+![](/blog/2020-04/raise2.png)
 
 
 Okay, nothing changed, but that was what was supposed to happen. That means that the function works for a two-overlap scenario. Let’s shrink down our window to see the cascade in action:
 
 
-![]({{ site.baseurl }}/img/blog/2020-04/raise3.png)
+![](/blog/2020-04/raise3.png)
 
 
 Hell yeah, there we go!

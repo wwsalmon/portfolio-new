@@ -5,7 +5,7 @@ date: '2020-11-22 01:47:40'
 tags: philosophy
 ---
 
-![Descartes' Tree of Knowledge]({{ site.baseurl }}/img/blog/2020-11/descartes-tree.jpg)
+![Descartes' Tree of Knowledge](/blog/2020-11/descartes-tree.jpg)
 
 For a program called [The Knowledge Society](https://tks.world), I've been spending my morning commutes the past two weeks reading through the [Internet Encyclopedia of Philosophy](https://iep.utm.edu/descarte/) and [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/descartes/)'s introductions to Renes Descartes. Two months ago, I had attempted to do the same for Nietszche, but struggled to come to any valuable understandings beyond surface-level connections to the Existentialist philosophy of Kierkegaard and Sartre. I was afraid that I would find the same with Descartes, but this wasn't the case. Nietszche was an approximate contemporary of the philosophers I already knew, but Descartes is a close predecessor, his ideas both the groundwork for and rejected antecedents for the later frameworks I (currently and loosely) hold as my own. This sparked some thoughts about the relationship between physics and metaphysics, the nature of truth, and the progression of knowledge over time that found their way into rambling conversations and eventually this blog post.
 
@@ -51,7 +51,7 @@ What we've just done is transcend Descartes' separation of mind and body. But li
 
 A last idea of Descartes' illustrates some thoughts I've come to in this blog post: the tree of knowledge. The root of Descartes' tree of knowledge represents metaphysics. The trunk is physics, and the branches and fruits are its eventual applications: mechanics, medicine, ethics, etc.
 
-![Descartes' Tree of Knowledge]({{ site.baseurl }}/img/blog/2020-11/descartes-tree.jpg)
+![Descartes' Tree of Knowledge](/blog/2020-11/descartes-tree.jpg)
 
 I didn't think much of this breakdown at first, but looking back on it now, it illustrates the relationship between physics and metaphysics that has been my main takeaway from my brief study of Descartes. Both are part of the tree of knowledge, made of the same wood, not fundamentally different. The only difference is that physics (i.e. all science) is above ground, able to rigorously and logically explain real-world phenomena, while metaphysics are below ground, dealing with the domains of knowledge that we've yet to -- or may never -- decipher. Physics are necessarily dependant on metaphysics, but it can also push back: metaphysical roots grow in new and deeper directions as the trunk and branches grow above it. Domains of metaphysics have been replaced, or at least greatly impacted, by the development of physics in past centuries, and surely centuries more to come (admittedly here the tree analogy breaks down a little bit).
 

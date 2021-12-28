@@ -10,7 +10,7 @@ forcevideo: true
 
 Recently I’ve been working on [Morse](https://github.com/wwsalmon/morse-wp-theme), a WordPress theme custom-built for small newspapers, drawing on my experience building and then maintaining [*The Phillipian*](https://phillipian.net/)[’s website](https://phillipian.net/) for a year. I wanted this theme to be highly customizable, able to easily accomodate any paper’s branding and maybe even *The Phillipian*’s one day. A big part of this is allowing users to specify what fonts they want to be used.
 
-![]({{ site.baseurl }}/img/blog/2020-06/morse-two-fonts.jpg)
+![](/blog/2020-06/morse-two-fonts.jpg)
 
 To start, it would just be Google Fonts. Good variety, hopefully easy to implement. The vision was that a user could go to the Customizer interface in WordPress, plug in a font name, and watch the preview update to use that font where applicable, then publish it and have their changes go live.
 

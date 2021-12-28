@@ -5,7 +5,7 @@ tags: moments fiction
 date: '2020-12-11 14:11:15'
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-12/peppercorn.png)
+![](/blog/2020-12/peppercorn.png)
 
 I rake a fork through the small glass container in front of me and find a peppercorn, a small black ball amidst the green and brown of my meal. With a piece of tofu, I scoop it up and deliver it to my mouth.
 

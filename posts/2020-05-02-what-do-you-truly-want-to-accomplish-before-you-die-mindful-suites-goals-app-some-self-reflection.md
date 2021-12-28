@@ -9,7 +9,7 @@ date: '2020-05-02 14:21:06'
 Today, I opened the Google Play Store on my phone, searched for a goal-setting app I had found through IndieHackers, and installed it. I opened it and was greeted by a standard onboarding experience; panels that slid by, a Google sign up button. Then, without warning, I was greeted with the following question:
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/northstar-question.png)
+![](/blog/2020-05/northstar-question.png)
 
 
 Now, normally I’m skeptical of any digital goal-setting tools. I’ve tried Todoist, Trello, all sorts of things before. Sometimes, they’re incredibly useful, like for keeping track of work for *The Phillipian*, which involved managing a dozen different teams and subprojects at once. Most of the time, though, for personal task tracking, I find that digital tools just get in my way. They’re too powerful, too easy to use, too easy to get rid of tasks or add new ones. Something physical that takes more effort to change around keeps me much more grounded. At school, I use a planner and a scrap notebook that I keep with me whenever I can; locked at home, I use a big 3ft x 2ft whiteboard to keep track of my week.
@@ -29,7 +29,7 @@ Marketing is powerful, ha. I’m reminded of some of Peter Thiel’s writing abo
 That brings us now to the question that stared me down as described in the beginning of this blog post. For emphasis, here it is again.
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/northstar-question.png)
+![](/blog/2020-05/northstar-question.png)
 
 
 Whatever I had ever expected from any app, this was not it. This was literally the onboarding process, the core value proposition for the entire usage of the app. And it wasn’t some surface level feature, some way to maximize productivity or health or even happiness. No. Essentially, “What is your purpose in life? What are your values: not only the ones that you live by, but the ones that you live for?”
@@ -41,7 +41,7 @@ Life is about values. Life is about choosing your struggles, not avoiding or min
 My answer was somewhat less sharply soul-touching than the question.
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/northstar-ans.png)
+![](/blog/2020-05/northstar-ans.png)
 
 
 “That’s inspiring!” …if you say so, lol. It’s really vague, because this is as far as I feel my reading, thinking, and living has taken me. Manson’s *Subtle Art* established what values are and how they’re fundamental to any part of life, but as he writes on his blog, he doesn’t go beyond that — that’s for his second and much less favorably reviewed book, *Everything is F*cked*. Perhaps the unfavorability of this second book hints at Manson riding a wave of success and falling off in his writing, but perhaps it’s something bigger, about the idea of a universal framework for meaning itself. Existentialist philosophy — in particular that I’ve read, Kierkegaard and Sartre — define meaning in life almost by its absence: if there is a meaning to life, being trapped in our mortal subjectivities we may never know it, so the only meaning to life is what we create for ourselves. “Man is nothing but what he makes of himself.”[^sartre]
@@ -53,7 +53,7 @@ What values do I want my life to be lived in service of? I don’t know right no
 Okay, that was the very first question of the onboarding. I’ve been reminded that I’m living a life, not an application process, not a school, not a career. What’s next?
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/goal-question.png)
+![](/blog/2020-05/goal-question.png)
 
 
 Okay, a much more down-to-earth question. Before I explain my answer, let me back up a bit.
@@ -71,7 +71,7 @@ For sure, this is an unresolved issue that I expect to understand with time. For
 So, thinking about the various projects I’ve taken on, the ones I plan to take on, the blog posts I’ve been writing, internship opportunties, and preparing to get the most out of college, here’s what I answered as my goal:
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/goal-ans.png)
+![](/blog/2020-05/goal-ans.png)
 
 
 “You already have everything you need to achieve this!” Haha, this is for sure true. Tons of amazing resources out there and project ideas lined up. Looking forward to pushing ahead.
@@ -79,7 +79,7 @@ So, thinking about the various projects I’ve taken on, the ones I plan to take
 There are two more questions.
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/habit-question.png)
+![](/blog/2020-05/habit-question.png)
 
 
 At the start of my spring break/forever Coronavirus break, I set out a bunch of nice, concrete habits to achieve. Run three times a week. Sleep at midnight and wake up at 8. Write four pieces of creative writing a week. Practice piano six hours a week. Some of these were ambitious goals, but I set them to hit as many of them as I could — running I enjoyed and was able to, with Central Park right across the street. I competed with a friend, calculating a score each week. 
@@ -91,7 +91,7 @@ These goals were something like plus goals from the beginning — not doing them
 This didn’t mean that I didn’t have habits, or longer term characteristics, that I wanted to strive for. Here’s what I answered:
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/habit-ans.png)
+![](/blog/2020-05/habit-ans.png)
 
 
 Not one that’s easily tracked, i.e. not based on time frequency; but I think it qualifies as a habit, and it’s certainly one that I’ve struggled with and would improve my life a lot if I fixed. Not doing things on time is one bad habit I had identified and had in mind from previous self-reflections. Another candidate was speaking clearly, loudly, without “ums.”
@@ -99,13 +99,13 @@ Not one that’s easily tracked, i.e. not based on time frequency; but I think i
 The last question is somewhat similar.
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/mindset-question.png)
+![](/blog/2020-05/mindset-question.png)
 
 
 I’ll go straight to my answer:
 
 
-![]({{ site.baseurl }}/img/blog/2020-05/mindset-ans.png)
+![](/blog/2020-05/mindset-ans.png)
 
 
 A very social-interaction-based type of mindset, but really, is that so different from an interaction-with-self mindset? What you think becomes what you say becomes what you do, and the other way around. Radical empathy — it’s a term I know has been written a lot about, that I haven’t read a lot about, but have appropriated it (for now) as a name for my own intuition and approach towards everything from personal relationships and managing team members to public advocacy and judging public figures. Understand the worst, but always assume the best of people;[^charisma] be radiantly positive and grateful, see opportunities out of problems. The bad doesn’t negate the good. At the same time, speak firmly. Be decisive and uncompromising at your core. The intersection of the two is a difficult place to find, but it’s where I want to be.

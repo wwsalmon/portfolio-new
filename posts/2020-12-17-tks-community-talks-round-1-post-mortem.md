@@ -38,7 +38,7 @@ All in all, phenomenally. I'll break things down by smaller events preceding the
 
 I first announced TKS Community Talks on Sunday, November 22. "Talks open to the TKS Community, featuring...YOU!" went the premise. I included some incentives for giving a talk, and some general ideas for topics. I didn't know what the reception would be.
 
-![]({{ site.baseurl }}/img/blog/2020-12/og-slack.png)
+![](/blog/2020-12/og-slack.png)
 
 The first big win was that this seemed to be something the community was interested in. More than 40 people reacted to the post saying they would be interested in giving a talk. Two and a half hours after sending the initial announcement, I posted a follow-up with a date for the talks (December 4) and a speaker application form. December 4 was a bad date for the event — the Innovate challenges were due on the same day — and after getting a few messages about it, I announced that Community Talks would be pushed back one week. The deadline to apply would be December 4, and the talks themselves December 11.
 
@@ -62,7 +62,7 @@ I think the key reason that this was the case was because the speakers viewed th
 
 On top of this surface-level impression, I was passionate about making the talks successful and put in the work to push the speakers to as well. Even in my very first message, I pushed speakers to high standards, providing detail-oriented guidance and high standards examples. Half of this message to Neha, for example, is just about writing a good title and blurb:
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-firstdm.png)
+![](/blog/2020-12/commtalks-firstdm.png)
 
 This trend continued on Wednesday, when recordings came in. After chasing after the speakers to get their recordings in Monday and Wednesday afternoon, I suddenly found myself at 11 PM with a pile of them, and no prior plan for what to do. Sabeeh had allegedly recruited other Activates to help give feedback, but on Wednesday night at 11 PM Sabeeh was sleep and I didn't know who had agreed to help.
 
@@ -70,7 +70,7 @@ I couldn't wait, though. A 12-hour delay in feedback at this point would be losi
 
 This is what those rounds of feedback looked like:
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-feedback.png)
+![](/blog/2020-12/commtalks-feedback.png)
 
 I sent two on Wednesday night, and three more Thursday morning. Sabeeh joined in on Thursday and gave the last two rounds required. If a speaker came back with a question or intermediate draft or recording, I replied as quickly as I could, bashing out in 10 or 20 minutes yet another round of notes.
 
@@ -90,7 +90,7 @@ On Tuesday night (Wednesday morning) before the talk, I sent out the first annou
 
 The Tuesday announcement had three slides attached to it, featuring the titles and blurbs that speakers had refined and sent the previous day.
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-slides.png)
+![](/blog/2020-12/commtalks-slides.png)
 
 I was surprised by how well the slides came out (Navid even complimented me on them 😍). When I first set out to make them late, late on Tuesday night, I had no idea of how I would approach it. I wanted to hype the event and the speakers up, but I haven't seen many conference posters before; I didn't have a default layout to reference. Community Talks' presence has been purely in the form of Slack messages and Notion pages so far, so there were no fonts, branding, or visual cues to reference, either.
 
@@ -130,17 +130,17 @@ The results:
 
 **Q: How much did you enjoy this event? (1 = Not at all, 10 = Favorite TKS event. Average 8.83)**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-enjoy.png)
+![](/blog/2020-12/commtalks-enjoy.png)
 
 ---
 
 **Q: How professional was this event? (1 = Not at all, 10 = TED. Average 8.67)**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-professional.png)
+![](/blog/2020-12/commtalks-professional.png)
 
 **Q: How valuable was this event to you? (1 = Learned nothing, 10 = Life changing. Average 8.33)**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-value.png)
+![](/blog/2020-12/commtalks-value.png)
 
 In retrospect, we should have told respondents to be critical and hold us to high standards as organizers, too. I would assume that these ratings are somewhat inflated, but they do hold some good insights.
 
@@ -189,19 +189,19 @@ All other answers were mentioned by only single respondents. The event feeling l
 
 **Q: Would you attend a second round of Community Talks in January?**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-secondround.png)
+![](/blog/2020-12/commtalks-secondround.png)
 
 This one speaks for itself.
 
 **Q: Would you apply to speak at a second round of Community Talks in January?**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-speak.png)
+![](/blog/2020-12/commtalks-speak.png)
 
 There's plenty of interest in speaking in the second round, but again, I don't expect conversion rate to be anywhere near 100% from expressing interest to sending in a high-quality application. A follow-up question about potential topics revealed that most who expressed interest didn't have clear topics yet.
 
 **Q: Would you be willing to help organize future rounds of Community Talks, or help mentor speakers?**
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-organize.png)
+![](/blog/2020-12/commtalks-organize.png)
 
 Willingness to help organize was less enthusiastic, but still significant. Putting together a trustworthy, high-standards team will require much more than just seeing who's interested — more on this later — but it looks like at least a few quite legit people have expressed interest and will be worth reaching out to.
 
@@ -215,7 +215,7 @@ Later that night, I re-recorded the intro how I had planned for it to go, and al
 
 I'm not experienced with virality the way Sigil Wen and Michael Ye are — growth marketing, in fact, is one of the biggest weaknesses of mine — but creating some generally high-quality thumbnails and titles, that I was very competent at. The branded thumbnails I created are one last part of this first round I'm proud of:
 
-![]({{ site.baseurl }}/img/blog/2020-12/commtalks-youtube.png)
+![](/blog/2020-12/commtalks-youtube.png)
 
 I sent links to all the recordings in a last message to #tks_global and the Activate Slack. The channel now has 11 subscribers and the most popular video is Satvik's at 140 views, so it hasn't *taken off* in any way, but that wasn't part of the vision I was pursuing. That's not to say that it's not worth pursuing; it's a reflection that it wasn't in my comfort zone, what I felt I could successfully drive for, but this is perhaps even more so a reason *for* me to pursue it. More on this later.
 

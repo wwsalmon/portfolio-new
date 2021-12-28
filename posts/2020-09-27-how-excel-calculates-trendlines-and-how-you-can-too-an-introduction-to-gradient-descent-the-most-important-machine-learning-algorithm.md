@@ -6,7 +6,7 @@ image: "/img/blog/2020-09/gd-cover.png"
 tags: code project machine-learning
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-09/gd-cover.png)
+![](/blog/2020-09/gd-cover.png)
 
 If you've taken a lab science class in school, you've probably had to fit a line of best fit to experimental data: whether it's to experimentally determine the acceleration of gravity, calculate the results of a chemical reaction, or prove that two variables are correlated. You plug your numbers into a spreadsheet, hit "fit trendline," and out pops a nice linear or exponential equation. But how does Excel or Google Sheets come up with this equation?
 
@@ -18,7 +18,7 @@ This problem is that of training a linear regression model. There are lots of st
 
 Here's a dataset to fit a line to.
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled.png)
+![](/blog/2020-09/Untitled.png)
 
 If you've taken Algebra, you should be familiar with the equation for a line:
 
@@ -26,7 +26,7 @@ $$y = mx + b$$
 
 By tweaking m and b, we can conjure up any line that we want to. We can take a few guesses at a line of best fit for our dataset:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%201.png)
+![](/blog/2020-09/Untitled%201.png)
 
 Clearly, some of these lines fit the data better than others. Yellow looks the best — green is too steep, and blue isn't steep enough. But how can we know for sure that yellow is better than green and blue? And how can we find not just a good line, but the best line possible?
 
@@ -34,7 +34,7 @@ We can start by coming up with a number to measure how well a line fits the give
 
 To calculate the mean squared error, take every example and measure the vertical distance between it and the line above or below. Square this distance, then average the squares of all examples.
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%202.png)
+![](/blog/2020-09/Untitled%202.png)
 
 Here's the formula for calculating mean squared error for our linear equation:
 
@@ -77,25 +77,25 @@ This is random and inefficient, though. Luckily, there's a much better, systemat
 
 Let's return to one of our bad lines:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%203.png)
+![](/blog/2020-09/Untitled%203.png)
 
 If we want to improve it, what should we do? A lot of the points look like they're above the line, so let's increase b to 70.
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%204.png)
+![](/blog/2020-09/Untitled%204.png)
 
 Looks a little better, and our MSE has dropped by almost 40%, from 2071 to 1286! Let's keep going and increase b to 90.
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%205.png)
+![](/blog/2020-09/Untitled%205.png)
 
 Another drop, to MSE = 902. Now let's try b = 110:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%206.png)
+![](/blog/2020-09/Untitled%206.png)
 
 ...and now we've overshot it, with our MSE increasing to 918.
 
 To find the optimal value of b and not overshoot, we might graph the MSE against different values of b.
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%207.png)
+![](/blog/2020-09/Untitled%207.png)
 
 Looks like the optimal value is just below 100. If you've taken algebra or calculus, your instinct at this point might be to bust out some derivatives or quadratic equations and try to find out exactly what this point is — but it's not so easy, because we don't actually have the equation for this line. Every one of those points above was computed by looping through 100 training examples and averaging their errors.
 
@@ -103,7 +103,7 @@ Instead of finding the optimal value analytically, then, we do it numerically.[^
 
 Let's go back to our starting point at b = 50. Let's plot the slope of our b vs. MSE plot at b = 50:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%208.png)
+![](/blog/2020-09/Untitled%208.png)
 
 We can find the slope at a given point using this formula:
 
@@ -125,15 +125,15 @@ It might look a little confusing, but all we're doing here is what we said earli
 
 With a learning rate of 0.5, we roughly converge to a b value around 99 in less than ten steps:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%209.png)
+![](/blog/2020-09/Untitled%209.png)
 
 We've only found the optimal value for b, however. Our MSE is still above 800, more than double that of our initial best-guess line, 2x + 50. We could now set b to be 99 and optimize for m, but that wouldn't get us the best answer either. To get the actual line of best fit, we have to optimize for both m and b at the same time.
 
 To do this, we can plot J against both m and b using a contour map:
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%2010.png)
+![](/blog/2020-09/Untitled%2010.png)
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%2011.png)
+![](/blog/2020-09/Untitled%2011.png)
 
 You may have seen contour maps of a mountain or particular region before. Such a map shows the land elevation at a given point. The contour map above does a very similar thing: it shows the mean squared error for every pair of $$m$$ and $$b$$ values. By finding the $$m$$ and $$b$$ values that give us the lowest possible mean squared error, then, we'll have found our line of best fit.
 
@@ -153,7 +153,7 @@ m := m - \alpha \frac{\delta J}{\delta m}
 
 Just as before, we can illustrate this two-variable gradient descent visually on our contour map and 3D plot. I plotted gradient descent from three starting points (red: m = 3, b = 150; green: m = 1, b = -200; blue: m = 1, b = 103).
 
-![]({{ site.baseurl }}/img/blog/2020-09/Untitled%2012.png)
+![](/blog/2020-09/Untitled%2012.png)
 
 As you can see, it doesn't matter where you start — gradient descent will eventually lead you to the right answer. In fact, standard practice when training machine learning models is to use small random values for your starting points.
 

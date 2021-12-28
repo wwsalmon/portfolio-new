@@ -5,7 +5,7 @@ tags: essay leadership
 date: '2021-01-19 15:52:43'
 ---
 
-![]({{ site.baseurl }}/img/blog/2021-01/innovation.png)
+![](/blog/2021-01/innovation.png)
 
 The CEO of a startup I worked for as a Product Manager asked me for one last contribution in the last week of my job: a write-up on how to make the team a high-performance one.
 

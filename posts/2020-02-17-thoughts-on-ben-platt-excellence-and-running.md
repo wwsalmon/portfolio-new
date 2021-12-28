@@ -34,7 +34,7 @@ In a discussion with a friend recently, I reflected on my own experiences with e
 
 Regardless of the causes, my lack of excellence is the way it was, and I’ve been able to reconcile myself with it: there’s nothing I can do but keep trying, keep striving to do the best I can, then do better, and perhaps one day reach excellence. I’m reminded of an old classmate’s advice about the skill plateau, how the only way to move past your self-perceived failures is by continuing to practice and attempt to improve:
 
-![Time-Skill Curve, as showed to me by a friend many years ago]({{ site.baseurl }}/img/blog/2020-02/timeskill-curve.png)
+![Time-Skill Curve, as showed to me by a friend many years ago](/blog/2020-02/timeskill-curve.png)
 
 I’m reminded also of a well-known Ira Glass quote about improving as a creative:
 
@@ -54,7 +54,7 @@ In the course of my discussion, I realized that there was one thing in which I f
 
 It turns out that nothing improves 5K times like mileage. My 10K pace dropped beneath my previous 5K PR. My senior season back on the team, I PR’d at just about 18 flat, consistently finishing as our second or third JV runner. At an early season invitational, I finished third out of the entire JV race, winning a pumpkin; at the championships, I finished in the top twenty of all the league’s JV runners.
 
-![Right: pumpkins won at NMH invitational, Left: pumpkins reunited at season championship]({{ site.baseurl }}/img/blog/2020-02/xc.jpg)
+![Right: pumpkins won at NMH invitational, Left: pumpkins reunited at season championship](/blog/2020-02/xc.jpg)
 
 Something felt so right about running: the fact that I could throw my entire body into it, my entire being into it; the purity, the competition, the comrardrie, the physical intensity. On a college application, I wrote:
 

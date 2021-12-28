@@ -6,7 +6,7 @@ date: '2020-12-05 02:09:02'
 tags: project code design
 ---
 
-![]({{ site.baseurl }}/img/blog/2020-12/thumb.png)
+![](/blog/2020-12/thumb.png)
 
 For a few weeks, a simple idea has been bouncing around in my head. Slowly, that idea became an itch to build. Last week, that itch became irresistible. With Thursday and Friday off from work for Thanksgiving, I decided to scratch that itch. And so, in just three days, I designed, built, and launched an entire social platform.
 
@@ -24,19 +24,19 @@ Investor Patrick O'Shaughnessy turns this drive into a loop: ["learn, build, sha
 
 Every day, I write a daily update. The update will include a reminder of my monthly goals and overall priorities; reflection on progress for the day; and a list of tasks I'll tackle in upcoming days. Here was my update for last Thursday:
 
-![]({{ site.baseurl }}/img/blog/2020-12/update1.png)
+![](/blog/2020-12/update1.png)
 
-![]({{ site.baseurl }}/img/blog/2020-12/update2.png)
+![](/blog/2020-12/update2.png)
 
 I wasn't the only one writing these updates. Dozens of my friends in a program called [TKS](https://tks.world/) also write updates every night. Updates are great for personal reflection and documentation, but they're supercharged when you share them with others. By sending daily updates to each other, we built up a web of accountability, and kept in touch with each other about what we were up to.
 
 So that's what we did! The thing is, some of us wrote our updates on Notion. I wrote them in my own SZ Project Tracker. Some of us wrote our updates in the very Slack channels we were sending them to each other through. That meant that, every night, I would find myself copy&pasting links across dozens of Slack channels, group chats, and DMs:
 
-![]({{ site.baseurl }}/img/blog/2020-12/slack1.png)
+![](/blog/2020-12/slack1.png)
 
-![]({{ site.baseurl }}/img/blog/2020-12/slack2.png)
+![](/blog/2020-12/slack2.png)
 
-![]({{ site.baseurl }}/img/blog/2020-12/slack3.png)
+![](/blog/2020-12/slack3.png)
 
 Keeping up with my friends' updates was similarly difficult.
 
@@ -44,7 +44,7 @@ This was, to put it simply, hella annoying. Every night as I spammed `Ctrl+C` `C
 
 Those thoughts became sketches. Those sketches became mockups, and those mockups became Updately: a social platform for daily updates.
 
-![]({{ site.baseurl }}/img/blog/2020-12/sketch.png)
+![](/blog/2020-12/sketch.png)
 
 ## How did I get here?
 
@@ -84,7 +84,7 @@ As a working Product Manager and UI/UX designer, I maintain that good visual des
 
 When I made SZPT, I was far from being comfortable with webapp UI patterns, or the tools to actually build them (React and Tailwind instead of traditional HTML and CSS). I knew what to emphasize, group, and communicate, though. While it wasn't visually *inspiring*, I would say that SZPT was *well-designed*:
 
-![]({{ site.baseurl }}/img/blog/2020-12/szpt.png)
+![](/blog/2020-12/szpt.png)
 
 I knew I could do a lot more with Updately, though. I had built dozens and dozens of interfaces at this point, across completely different apps and design systems. I wanted to make Updately **beautiful**.
 
@@ -92,7 +92,7 @@ Functionally, Updately is very simple. There are only three types of pages: your
 
 Between sketching in my notebook and writing code, I made a grand total of two spartan mockups in Figma:
 
-![]({{ site.baseurl }}/img/blog/2020-12/figma.png)
+![](/blog/2020-12/figma.png)
 
 The most important thing that I decided on here was actually the typography. Body text was a standard 20px size, and top headings were double that at 40px. By default, UI text would be 16px. But a lot important in-between was figured out in just those two mockups. What fonts would be used? How big should profile pictures be? Where should 16px font be used vs. 20px? How can opacity be used to further streamline visual hierarchy or communicate information?
 
@@ -126,7 +126,7 @@ Adam Watham, creator of TailwindCSS, recently had this to say about Next.js:
 
 That super tool approach is exactly how I used Next.js for Updately, building out both the frontend and backend in Next.js, and I can show you that "right next to your frontend code" is in no way an exaggeration:
 
-![]({{ site.baseurl }}/img/blog/2020-12/apiroutes.png)
+![](/blog/2020-12/apiroutes.png)
 
 ## Begone, AWS...
 
@@ -152,7 +152,7 @@ The first replacement tool I found was a library called [NextAuth.js](https://ne
 
 **Basically, NextAuth is magic.** NextAuth is to implementing authentication as Next.js is to basic frontend and backend development. This demo code on the NextAuth homescreen basically tells the whole story:
 
-![]({{ site.baseurl }}/img/blog/2020-12/nextauth.png)
+![](/blog/2020-12/nextauth.png)
 
 **In that screenshot is all the code you need for a full auth implementation**. A single Next.js API route automatically handles OAuth redirects, session creation, and everything else. With just this code (actual Updately source code):
 
@@ -205,7 +205,7 @@ I had my fair share of struggle learning how to work with MongoDB through the Mo
 
 First, I was able to get a MongoDB database up and running super easily, and completely for free, using MongoDB's own Atlas hosting solution. Once set up, I could view all data in my data base through a pretty web interface, even directly making updates or deletions if needed (which I sometimes did during testing).
 
-![]({{ site.baseurl }}/img/blog/2020-12/mongodb.png)
+![](/blog/2020-12/mongodb.png)
 
 Now, to actually get data into the database. The first step is to define some model schemas:
 
@@ -300,7 +300,7 @@ Here's how I wanted Updately's URLs to work: `[updately.vercel.app/@username](ht
 
 I did something similar with SZPT, but I don't remember how I did it with vanilla React at this point. With Next.js, though, adding this functionality was more or less trivial. Have a look:
 
-![]({{ site.baseurl }}/img/blog/2020-12/dynamicroutes.png)
+![](/blog/2020-12/dynamicroutes.png)
 
 Simply by naming our file `[updateUrl].tsx`, and putting it in a folder `[username]`, Next.js will handle any links of the form `[updately.vercel.app/username/updateUrl](http://updately.vercel.app/username/updateUrl)` and serve up the appropriate React pages, passing the URL contents to the React components through the `useRouter` hook.
 
@@ -310,11 +310,11 @@ That's where server side rendering comes into play. With normal client side rend
 
 The downside of server side rendering is that it takes longer for the page to load, given it's doing more work or waiting on data fetching requests in between getting the browser request and returning a response. On the other hand, a positive side effect of server side rendering is that SEO works much better, as all the information is contained in the HTML directly returned to a request. Slack, for example, wasn't able to generate link previews for my SZPT links:
 
-![]({{ site.baseurl }}/img/blog/2020-12/szptlink.png)
+![](/blog/2020-12/szptlink.png)
 
 But it does so beautifully with Updately links:
 
-![]({{ site.baseurl }}/img/blog/2020-12/updatelylink.png)
+![](/blog/2020-12/updatelylink.png)
 
 For many apps, SEO for app pages likely doesn't matter, and the slow loading time of SSR might outweigh other benefits. For Updately, though, pre-rendering pages is something that makes sense on multiple fronts, so the tradeoff was worth it and the majority of app pages use SSR to fetch data.
 
@@ -426,7 +426,7 @@ Unfortunately, I ran into errors immediately. Because the backend functions sent
 
 At this point, I came to my senses. Why was I even using Netlify, using a workaround package, to host my Next.js app? Next.js is a product of Vercel, which had their own free one-click hosting service. I undid my Netlify modifications and re-deployed Updately at `[updately.vercel.app](http://updately.vercel.app)` without issue.
 
-![]({{ site.baseurl }}/img/blog/2020-12/feed.png)
+![](/blog/2020-12/feed.png)
 
 The thrill of launch that had been building for the past few days now kicked in. I sent out the link to friends on Slack who sent updates. Only two people signed in on the first night, but it was thrilling to see their profile pictures and updates show up on the app — my app. Just loading what had previously been at `[localhost:3000](http://localhost:3000)` up at an actual app address is exciting (and confusing if you have both open at the same time).
 
@@ -446,17 +446,17 @@ The main value of building Updately for me was to have a public project to share
 
 An even more exciting and unexpected connection came a few days after launch. On a friend's recommendation, I tried out an app called Sunsama, which offered similar daily task tracking and weekly reflection value props. After signing up for the trial, I sent the CEO of the company an email with a few screenshots of Updately, thinking he might be interested to see a product that tackled the same pain points as his. My whole software and entrepreneurship journey, TKS and all, started with a cold email to a guy on IndieHackers whose app I tried out. Who knew what this email could lead to.
 
-![]({{ site.baseurl }}/img/blog/2020-12/email1.png)
+![](/blog/2020-12/email1.png)
 
-![]({{ site.baseurl }}/img/blog/2020-12/email2.png)
+![](/blog/2020-12/email2.png)
 
 The reply, well, it's all that I could have hoped for and more.
 
-![]({{ site.baseurl }}/img/blog/2020-12/email3.png)
+![](/blog/2020-12/email3.png)
 
 ...
 
-![]({{ site.baseurl }}/img/blog/2020-12/email4.png)
+![](/blog/2020-12/email4.png)
 
 I followed up with more details about my gap year and current job, and said that I would be busy until at least halfway through Q1 2021, but would be excited to potentially work with him after that.
 
