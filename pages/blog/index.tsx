@@ -35,7 +35,7 @@ export default function Blog({posts}: {posts: BlogPostProps[]}) {
             <SEO title="Blog"/>
             <H1>Blog</H1>
             <Subheading>A place for me to dump my thoughts — posts about tech, innovation, culture, and social change, along with personal essays and creative pieces</Subheading>
-            <div className="my-6">
+            <div className="my-12">
                 {tags.map(tag => <BlogTag tag={tag} count={posts.filter(d => d.tags.includes(tag)).length}/>)}
             </div>
             <Masonry className="mt-20 -mx-8">
