@@ -9,14 +9,22 @@ export function getDateFromBlogPostProps(post: BlogPostProps): Date {
     return new Date(post.date || `${post.filename.substr(0, 10)}`);
 }
 
+export function stripMarkdown(md: string): string {
+    return remark()
+        .use(strip)
+        .processSync(md)
+        .value
+        .toString();
+}
+
+export function getReadingTime(body: string): number {
+    return Math.max(Math.round(body.split(" ").length / 280), 1);
+}
+
 export default function BlogItem({post}: { post: BlogPostProps }) {
     const {title, tags, date, filename} = post;
 
-    const stripped = remark()
-        .use(strip)
-        .processSync(post.body)
-        .value
-        .toString();
+    const stripped = stripMarkdown(post.body);
 
     const youtubeMatches = post.body.match(/(?:src="https:\/\/www\.youtube\.com\/embed\/)(.*)(?:\?modestbranding=1")/);
     const youtubeId = youtubeMatches ? youtubeMatches[1] : null;
@@ -24,7 +32,7 @@ export default function BlogItem({post}: { post: BlogPostProps }) {
     const firstImageMatches = !youtubeId ? post.body.match(/!\[(.*)\]\((.+)\)/) : null; // if youtubeId we don't care about first image
     const firstImageString = firstImageMatches ? firstImageMatches[0] : null;
 
-    const readingTime = stripped.split(" ").length / 280;
+    const readingTime = getReadingTime(stripped);
 
     return (
         <div className="md:w-1/2 px-8 mb-12">
@@ -56,7 +64,7 @@ export default function BlogItem({post}: { post: BlogPostProps }) {
                     </div>
                 </div>
                 <Link href="">
-                    <a className="font-bold opacity-30 hover:opacity-100 uppercase ml-auto">{Math.max(Math.round(readingTime), 1)} min read &gt;</a>
+                    <a className="font-bold opacity-30 hover:opacity-100 uppercase ml-auto">{readingTime} min read &gt;</a>
                 </Link>
             </div>
             <hr className="mt-12 bg-gray3"/>

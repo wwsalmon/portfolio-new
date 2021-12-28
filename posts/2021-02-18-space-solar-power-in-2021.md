@@ -4,12 +4,12 @@ layout: post
 date: '2021-02-18 02:28:18'
 ---
 
-<div className="yt-container">
+<div class="yt-container">
     <iframe
         src="https://www.youtube.com/embed/qxTM_suiHtk?modestbranding=1"
         frameBorder="0"
         allowFullScreen
-    />
+    ></iframe>
 </div>
 
 ## Introduction: Why Consider Space Solar Power?

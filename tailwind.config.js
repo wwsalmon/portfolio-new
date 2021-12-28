@@ -18,9 +18,23 @@ module.exports = {
                 "gray6": "#FAFAFA",
                 "black": "#18181B",
                 "blue": "#0026ff",
+            },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        a: {
+                            color: "#0026ff",
+                            fontWeight: 400,
+                            textUnderlineOffset: 6,
+                            textDecorationThickness: 1,
+                        }
+                    }
+                }
             }
         }
     },
     variants: {},
-    plugins: [],
+    plugins: [
+        require("@tailwindcss/typography"),
+    ],
 }

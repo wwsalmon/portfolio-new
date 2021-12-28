@@ -4,13 +4,13 @@ layout: post
 date: '2020-08-17 12:26:38'
 ---
 
-![]({{site.baseurl}}/img/blog/2020-08/curr-site.jpg)
+![](/blog/2020-08/curr-site.jpg)
 
 I've been using Jekyll for my personal website since [at least two years ago](https://github.com/wwsalmon/webtest/commit/f608147b45880aac217902f19c89b411253465a5), when I used it to build a clean little [video portfolio](https://wwsalmon.netlify.app/). It was a huge step forward for me then, having only built raw HTML/CSS websites before, with a sprinkle of JQuery-flavored JS. Instead of hard-coding each page and item, getting really good at copy-pasting, I could auto-generate and populate pages with markdown and CSV files! Jekyll was perfect for me then, remained so when I rebuilt my website and added a blog, and is still immensely attractive today. Its blogging and micro-database (collections) features work effortlessly right out of the box; tools like Jekyll admin make managing posts as easy as using a full CMS; Liquid templating is intuitive and nonintrusive, so my raw HTML/CSS/JS skills carried over and continued to grow. Plus, it works seamlessly with GitHub pages, letting me gradually ease my way into more of the real web dev world (Netlify, Vercel, AWS, VPS's...).
 
-![]({{site.baseurl}}/img/blog/2020-08/curr-blog.jpg)
+![](/blog/2020-08/curr-blog.jpg)
 
-![]({{site.baseurl}}/img/blog/2020-08/jek-admin.jpg)
+![](/blog/2020-08/jek-admin.jpg)
 
 Once again, though, I've embarked on a quest to rebuild my website, and in the process I'm leaving Jekyll behind for Gatsby. I've never used Gatsby before, and I've only worked with React for a few months, so I'll be learning a lot in the process. In this post and several more to come, I want to document this learning and building process, ["learn in public"](https://www.swyx.io/writing/learn-in-public/) as @swyx puts it. The goal of these posts, again borrowing @swyx's wisdom, is to "make the thing you wish you had found when you were learning." I'll document my process, resources that I used, etc., helping me solidify my learning, and hopefully helping you gain some insight, too, whether you're just starting out with Gatsby like me or a veteran curious about a newbie's approach.
 
@@ -216,7 +216,7 @@ Now, everything was set up for me to be able to fully replicate then navbar from
 
 My navbar is pretty straightforward: a little nameplate on the left, and a list of links on the right. There are two little fancy things on top of this:
 
-<video src="/blog/2020-08/navbar-scrolling.mp4"/>
+<video src="/blog/2020-08/navbar-scrolling.mp4"></video>
 
 1. Once scrolled past a certain point, the "samson/zhang" nameplate shrinks to "s.zhang".
 2. On mobile, the list of links is replaced by a right-side hamburger menu.
@@ -412,9 +412,9 @@ Within the menu is a button to close the menu (again using FontAwesome), and the
 
 And with that, plus tweaking around with positioning and styling, I had fully replicated the navbar from my old site! Here's a comparison (new on left, old on right):
 
-![]({{site.baseurl}}/img/blog/2020-08/comp-1.jpg)
+![](/blog/2020-08/comp-1.jpg)
 
-![]({{site.baseurl}}/img/blog/2020-08/comp-2.jpg)
+![](/blog/2020-08/comp-2.jpg)
 
 # Conclusion (of day 1)
 

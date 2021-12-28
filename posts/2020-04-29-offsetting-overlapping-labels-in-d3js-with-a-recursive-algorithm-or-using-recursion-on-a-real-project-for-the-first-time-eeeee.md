@@ -10,14 +10,14 @@ date: '2020-04-29 13:46:45'
 
 What is recursion? Simply a function that calls itself. As an example, here’s a recursive algorithm for calculating factorials:
 
-{% highlight javascript linenos %}
+```js
 function factorial(n) {
     if (n == 2) {
         return 2;
     }
     return n * factorial(n - 1);
 }
-{% endhighlight %}
+```
 
 This is a pretty trivial application; the same alg is easy enough to implement with a simple for loop. But for certain complex operations like merge sort, a recursive approach can be much easier and faster.
 
@@ -35,7 +35,7 @@ Here’s the starting point. Nice simple stackedBarChart, and I was just startin
 
 The code so far is straightforward. First, I create a polyline, for now with just two points, going from the center of each bar to a certain amount above it. Then, above each of these lines, I render the appropriate text label, and push the right bound of each text label to an array. These right bounds are used to calculate the third point of the polyline, ending right where the text does. (Not sure why it’s not working for “Both” in the example above whoops)
 
-{% highlight javascript linenos %}
+```js
 chartGroups.selectAll(".sota-stackedBarChart-label-aboveBar-line")
     .data(d => d)
     .join("polyline")
@@ -72,7 +72,7 @@ chartGroups.selectAll(".sota-stackedBarChart-label-aboveBar-line")
         let currentPoints = this.getAttribute("points");
         return currentPoints + ` ${labelRightBounds[i]},${-labelBelow}`;
     })
-{% endhighlight %}
+```
 
 So, okay! Clearly the labels overlapping is a problem. A reference from previous print versions of the survey provide guidance on how to fix this:
 
@@ -98,7 +98,7 @@ This implementation came with a few notable changes from the previous code. I re
 
 This time, more than the right boundary of each text label is pushed to the `labelRightBounds` array, but rather an array of both its left boundary position and its width. This allows us to calculate overlap between labels, which I do in a straightforward for loop. Iterating from first to last, if the current element overlapped with the previous one, then I would raise the height of the previous one and extend the left position of the current element.
 
-{% highlight javascript linenos %}
+```js
 let labelRightBounds = [];
 
 chartGroups.selectAll(".sota-stackedBarChart-label-aboveBar-text")
@@ -150,7 +150,7 @@ chartGroups.selectAll(".sota-stackedBarChart-label-aboveBar-text")
     .attr("x", (d, i) => labelRightBounds[i][0])
     .attr("y", (d, i) => labelHeights[i] * labelBelow);
 }
-{% endhighlight %}
+```
 
 Iterating from front to back is nice because previous right boundary shifts are accounted for; i.e. the shifting of a previous label might cause it to overlap with the next one, which will now have to move more. But thinking about this alg reveals that it doesn’t actually account for not just one, but multiple labels in a row overlapping, because if a label is found to be overlapping with a previous label, only the height of this immediately preceding label is raised. If this preceding label was overlapping with its preceding label, this precending label would not get raised another step, as it should if the second label were raised by the third.
 
@@ -160,7 +160,7 @@ One solution is to do just that — loop over everything twice: once first-to-la
 
 Let’s take a look at the final implementation — just the recursive part replacing the for loop, as the rendering code didn’t really change.
 
-{% highlight javascript linenos %}
+```js
 function getLabelHeight(i) {
     if (i == labelRightBounds.length - 1) {
         labelHeights[i] = -2;
@@ -179,7 +179,7 @@ function getLabelHeight(i) {
 }
 
 getLabelHeight(0);
-{% endhighlight %}
+```
 
 We still have our `labelHeights` and `labelRightBounds` arrays, the latter storing the left coordinate and width of each label. We define our recursive function function `getLabelHeight` with parameter `i`, the index of the current label in consideration.
 

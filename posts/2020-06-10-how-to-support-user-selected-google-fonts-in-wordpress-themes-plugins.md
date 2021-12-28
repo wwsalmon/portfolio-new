@@ -14,7 +14,7 @@ Recently I’ve been working on [Morse](https://github.com/wwsalmon/morse-wp-the
 
 To start, it would just be Google Fonts. Good variety, hopefully easy to implement. The vision was that a user could go to the Customizer interface in WordPress, plug in a font name, and watch the preview update to use that font where applicable, then publish it and have their changes go live.
 
-<video src="/blog/2020-06/morse-fonts-demo.mp4"/>
+<video src="/blog/2020-06/morse-fonts-demo.mp4"></video>
 
 Honestly, this was one of the features I was most intimidated by. I’ve worked a fair bit with WordPress and PHP, and with JavaScript, but never in combination. I looked through the source code of open-source plugins and themes that had already implemented Google Fonts integration and got lost in their endless includes and complexities, not even knowing where to find the code that mattered.
 
@@ -26,7 +26,7 @@ First, let’s create fields in the customizer to allow users to specify fonts. 
 
 We’ll add three different fields: a body font, a heading font, and an accent font (for the occassional button, label, etc.; obviously you can make these options whatever you want). This is straightforward to implement:
 
-{% highlight php linenos %}
+```php
 function morse_wp_plugin_customizer($wp_customize)
     {
         $wp_customize->add_section('morse-wp-custom-section', array(
@@ -56,14 +56,14 @@ function morse_wp_plugin_customizer($wp_customize)
     }
     
     add_action('customize_register', 'morse_wp_plugin_customizer');
-{% endhighlight %}
+```
 ## Utility Classes
 
 In a template PHP file, we can now access these customizer settings using `get_theme_mod()`, for example `get_theme_mod(``"``morse-wp-font-heading``"``, "Georgia")` to get the heading font, with a default of Georgia if the option has not been set by the user. Now, how do we get this into our CSS?
 
 The trick here is to use utility classes instead of trying to write dynamic fonts into semantic CSS. Instead of specifying that `.article-title h1` should have our heading font, we specify a utility class `.morse-font-heading` that we can apply to any element we want our heading font on. Instead of trying to insert snippets into or overwrite various parts of a stylesheet, then, we can simply add our utility classes in an inline style block using the `wp_head` hook:
 
-{% highlight php linenos %}
+```php
 function morse_wp_plugin_add_styles(){ ?>
     <style>
         .morse-font-body{
@@ -83,7 +83,7 @@ function morse_wp_plugin_add_styles(){ ?>
 add_action("wp_head", "morse_wp_plugin_add_styles");
 
 
-{% endhighlight %}
+```
 
 Note: above is only a snippet of the `add_styles` function I actually use. The same approach can be applied to implementing user-specified colors, for example, which I might write about later.
 
@@ -95,19 +95,19 @@ First, download the [Web Font Loader library](https://github.com/typekit/webfont
 
 Now, all we need to do is run `WebFont.load()` with our desired parameters to load in our fonts. [Web Font Loader’s GitHub](https://github.com/typekit/webfontloader) provides documentation on what these parameters look like, but here’s a quick example:
 
-{% highlight javascript linenos %}
+```js
 WebFont.load({
     google: {
         families: ["Roboto:400,700", "Roboto Mono"]
     }
 });
-{% endhighlight %}
+```
 
 Pretty easy, right? WordPress allows us to easily insert inline scripts using `wp_add_inline_script`, which we can include right after we enqueue the Web Font Loader library. All we have left to do, then, is generate the parameters to call based on our Customizer settings. This just takes some simple PHP. First, I create an array of fonts with `array_unique([get_theme_mod("morse-wp-font-body"), get_theme_mod("morse-wp-font-heading"), get_theme_mod("morse-wp-font-accent")])` — `array_unique` making sure I don’t duplicate-request fonts — then turn this into the specific format that the loader wants with a for loop and some string concatenation. For now, I just specified 400 and 700 weights (regular and bold), though it’s only a matter of busiwork if you wanted to allow user-specified weights as well.
 
 Here’s how it all comes together:
 
-{% highlight php linenos %}
+```php
 function morse_wp_enqueue_fonts(){
     
             wp_enqueue_script( 'webfontloader', plugin_dir_url( __FILE__) . "../js/webfontloader.js", NULL, '', true );
@@ -131,7 +131,7 @@ function morse_wp_enqueue_fonts(){
             wp_add_inline_script( 'webfontloader', $config_string, 'after' );
     }
     add_action("wp_enqueue_scripts", "morse_wp_enqueue_fonts");
-{% endhighlight %}
+```
 
 ## And We’re Done!
 

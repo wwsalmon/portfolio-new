@@ -1,4 +1,16 @@
 import {GetStaticPaths, GetStaticProps} from "next";
+import SEO from "../../../../components/SEO";
+import {remark} from "remark";
+import remarkParse from 'remark-parse'
+import remarkHtml from 'remark-html'
+import remarkFootnotes from "remark-footnotes";
+import Link from "next/link";
+import {FiArrowLeft} from "react-icons/fi";
+import {format} from "date-fns";
+import {getDateFromBlogPostProps, getReadingTime, stripMarkdown} from "../../../../components/BlogItem";
+import strip from "strip-markdown";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
 
 export interface BlogPostProps {title: string, date: string, tags: string[], body: string, filename: string};
 
@@ -9,8 +21,6 @@ export const getStaticPaths: GetStaticPaths = () => {
     const paths = files.map(file => ({
         params: {year: file.substr(0, 4), month: file.substr(5, 2), day: file.substr(8, 2), slug: file.substr(11, file.length - 14)}
     }));
-
-    console.log(paths[4]);
 
     return {paths, fallback: false};
 }
@@ -34,10 +44,39 @@ export const getStaticProps: GetStaticProps = ({params}) => {
     };
 }
 
-export default function BlogPost({title, date, tags, body}: BlogPostProps) {
+export default function BlogPost(props: BlogPostProps) {
+    const {title, body, tags} = props;
+
+    const markdown = remark()
+        .use(remarkParse)
+        .use(remarkFootnotes)
+        .use(remarkRehype, {allowDangerousHtml: true})
+        .use(rehypeStringify, {allowDangerousHtml: true})
+        .processSync(body);
+
+    const stripped = stripMarkdown(body);
+    const readingTime = getReadingTime(stripped);
+
     return (
-        <div>
-            <h2 className="font-bold text-2xl">{title}</h2>
+        <div className="max-w-3xl mx-auto px-4">
+            <SEO title={title}/>
+            <Link href="/blog">
+                <a className="flex items-center font-bold text-xl mt-16 mb-8">
+                    <FiArrowLeft/>
+                    <span className="ml-2">All Blog Posts</span>
+                </a>
+            </Link>
+            <h2 className="font-bold text-4xl leading-[1.4]">{title}</h2>
+            <div className="text-xl my-8">
+                {tags.map(tag => (
+                    <Link href={`/blog/${tag}`} key={"tag"+tag}>
+                        <a className="mr-2">#{tag}</a>
+                    </Link>
+                ))}
+                <p>{format(getDateFromBlogPostProps(props), "MMMM d, yyyy")}</p>
+            </div>
+            <p className="opacity-50 my-8 uppercase font-bold">{readingTime} min read</p>
+            <div dangerouslySetInnerHTML={{__html: markdown.value.toString()}} className="prose mt-8" style={{fontSize: 20}}/>
         </div>
     )
 }

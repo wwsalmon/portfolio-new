@@ -4,10 +4,10 @@ layout: post
 tags: project music
 ---
 
-<div className="yt-container">
+<div class="yt-container">
     <iframe
         src="https://www.youtube.com/embed/nGZXvGalQoU?modestbranding=1"
         frameBorder="0"
         allowFullScreen
-    />
+    ></iframe>
 </div>

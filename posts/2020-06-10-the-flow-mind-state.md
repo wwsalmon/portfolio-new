@@ -10,12 +10,12 @@ I first learned about the idea of "flow" in a NYT article about happiness, given
 
 Once I had heard of it, though, the idea kept coming up. A friend sent me this video:
 
-<div className="yt-container">
+<div class="yt-container">
     <iframe
         src="https://www.youtube.com/embed/cIVGp0SVAKw?modestbranding=1"
         frameBorder="0"
         allowFullScreen
-    />
+    ></iframe>
 </div>
 
 "Why I'm able to study 10 hours per day (how to stay focused)". Mildly clickbait title, but a solid video. This guy's secret? Get into a sense of flow, he tells us. This is how to overcome all procrastination and distraction and become a productivity beast.

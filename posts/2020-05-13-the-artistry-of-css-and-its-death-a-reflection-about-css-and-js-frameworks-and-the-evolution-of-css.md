@@ -16,7 +16,7 @@ To be sure, if you haven’t been able to tell yet, I don’t claim to be anythi
 
 Recently, I came across something like the following in a friend’s project:
 
-{% highlight css linenos %}
+```
     body{
       display: flex;
       justify-content: center;
@@ -29,7 +29,7 @@ Recently, I came across something like the following in a friend’s project:
     container{
       width: 1200px;
     }
-{% endhighlight %}
+```
 
 What on earth? I asked him what his thinking was. “The program where I learned CSS said to use flexbox on everything,” he told me.
 

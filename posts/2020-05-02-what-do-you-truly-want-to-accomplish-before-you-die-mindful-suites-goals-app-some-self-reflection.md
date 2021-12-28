@@ -20,12 +20,12 @@ To my initial disbelief, I saw that his project was a task-tracking app. To even
 
 Until I saw the promo video.
 
-<div className="yt-container">
+<div class="yt-container">
     <iframe
         src="https://www.youtube.com/embed/653KctLsSls?modestbranding=1"
         frameBorder="0"
         allowFullScreen
-    />
+    ></iframe>
 </div>
 
 The simplicity of the app, how it enforced this today-and-tomorrow goal-setting pattern, the satisfaction of completing tasks, the joy and order it could bring to my life — it screamed at me, grabbed me through my monitor and the upbeat music in the background. I wanted this. I still refuse to use my phone for any regular functionality, so the Android and iOS apps were off the table. I couldn’t find a webapp, and considered messaging Terry and asking him to make one, or building my own clone. But, no, this is just getting caught up in the rush. I have my ways to keep track of my life, this is definitely not worth the effort. So I didn’t end up using the app; but I will now live in envy of not doing so.

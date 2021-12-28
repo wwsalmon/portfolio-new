@@ -6,12 +6,12 @@ date: '2020-11-24 17:24:40'
 tags: project machine-learning code
 ---
 
-<div className="yt-container">
+<div class="yt-container">
     <iframe
         src="https://www.youtube.com/embed/w8yWXqWQYmU?modestbranding=1"
         frameBorder="0"
         allowFullScreen
-    />
+    ></iframe>
 </div>
 
 Anybody with even a passing interest in AI/ML likely knows the basics about neural networks. You connect a couple of layers of nodes with weights and biases, train it on some data, and bam, you've got a networik that can recognize cats or predict stock prices.
