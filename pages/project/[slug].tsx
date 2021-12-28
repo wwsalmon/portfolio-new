@@ -9,6 +9,7 @@ import {FiArrowLeft} from "react-icons/fi";
 import YTEmbed from "../../components/YTEmbed";
 import ItalicHeading from "../../components/ItalicHeading";
 import FilmItem from "../../components/FilmItem";
+import ProjectHeader from "../../components/ProjectHeader";
 
 export const Divider = () => (
     <div className="w-12 h-1 bg-black my-10"/>
@@ -17,18 +18,7 @@ export const Divider = () => (
 export default function FilmPage({item}: {item: FilmObj}) {
     return (
         <Container className="mt-16">
-            <SEO title={item.title}/>
-            <div className="flex flex-col items-center">
-                <Link href="/film">
-                    <a className="flex items-center font-bold">
-                        <FiArrowLeft/>
-                        <span className="ml-2">Back to film projects</span>
-                    </a>
-                </Link>
-                <Divider/>
-                <h1 className="text-4xl font-bold text-center mb-8">{item.title}</h1>
-                <p className="text-center text-2xl max-w-2xl leading-normal">{item.descript}</p>
-            </div>
+            <ProjectHeader backLink="/film" backLabel="film" title={item.title} description={item.descript}/>
             <YTEmbed ytid={item.ytid} className="my-12"/>
             <Divider/>
             <ItalicHeading className="mb-8">Highlights</ItalicHeading>

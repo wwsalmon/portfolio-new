@@ -1,8 +1,20 @@
 import {FilmObj} from "../pages/film";
 import {FiChevronLeft, FiChevronRight, FiPlayCircle} from "react-icons/fi";
-import {useState} from "react";
+import {Dispatch, SetStateAction, useState} from "react";
 import Link from "next/link";
 
+export const SliderButton = ({right, selectedIndex, setSelectedIndex, length}: { right: boolean, selectedIndex: number, setSelectedIndex: Dispatch<SetStateAction<number>>, length: number }) => (
+    <button
+        className={`absolute top-1/2 -translate-y-1/2 ${right ? "right-0" : "left-0"} z-[5] px-2 py-6 bg-black text-white opacity-50 hover:opacity-100 transition`}
+        onClick={() => right ? setSelectedIndex((selectedIndex + 1 === length) ? 0 : selectedIndex + 1) : setSelectedIndex(((selectedIndex - 1) < 0) ? length - 1 : selectedIndex - 1)}
+    >
+        {right ? (
+            <FiChevronRight/>
+        ) : (
+            <FiChevronLeft/>
+        )}
+    </button>
+)
 
 export default function FilmItem({item, className}: {item: FilmObj, className?: string}) {
     const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -15,18 +27,8 @@ export default function FilmItem({item, className}: {item: FilmObj, className?: 
                     alt=""
                     className="absolute top-0 left-0 filmItemThumb z-10"
                 />
-                <button
-                    className="absolute top-1/2 -translate-y-1/2 right-0 z-[5] px-2 py-6 bg-black text-white opacity-50 hover:opacity-100 transition"
-                    onClick={() => setSelectedIndex((selectedIndex + 1 === item.images.length) ? 0 : selectedIndex + 1)}
-                >
-                    <FiChevronRight/>
-                </button>
-                <button
-                    className="absolute top-1/2 -translate-y-1/2 left-0 z-[5] px-2 py-6 bg-black text-white opacity-50 hover:opacity-100 transition"
-                    onClick={() => setSelectedIndex(((selectedIndex - 1) < 0) ? item.images.length - 1 : selectedIndex - 1)}
-                >
-                    <FiChevronLeft/>
-                </button>
+                <SliderButton right={true} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} length={item.images.length}/>
+                <SliderButton right={false} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} length={item.images.length}/>
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[5] flex">
                     <div className="p-2 bg-white">
                         <span>{selectedIndex + 1}/{item.images.length}</span>

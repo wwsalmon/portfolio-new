@@ -113,7 +113,7 @@ export default function Building() {
             description: "A mechanical page turner for musicians. The final result of Cooper Union's 6 week product design and prototyping Makerspace class in the Summer STEM 2018 program.",
             tags: ["3d printing", "laser cutting"],
             images: ["autoturner.gif"],
-            url: "https://www.youtube.com/watch?v=c5Udwl8OnfE",
+            url: "/project/autoturner",
         },
         {
             name: "DIY Motorized Camera Gimbal",
