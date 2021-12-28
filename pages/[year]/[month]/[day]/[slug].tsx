@@ -1,14 +1,12 @@
 import {GetStaticPaths, GetStaticProps} from "next";
 import SEO from "../../../../components/SEO";
 import {remark} from "remark";
-import remarkParse from 'remark-parse'
-import remarkHtml from 'remark-html'
+import remarkParse from "remark-parse";
 import remarkFootnotes from "remark-footnotes";
 import Link from "next/link";
 import {FiArrowLeft} from "react-icons/fi";
 import {format} from "date-fns";
 import {getDateFromBlogPostProps, getReadingTime, stripMarkdown} from "../../../../components/BlogItem";
-import strip from "strip-markdown";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 
