@@ -120,7 +120,7 @@ export default function Building() {
             description: "Building a motorized 3-axis gimbal to stabilize cameras for filmmaking using 3D printing and laser cutting.",
             tags: ["3d printing", "laser cutting", "microcontrollers"],
             images: ["gimbal.gif"],
-            url: "https://www.youtube.com/watch?v=bW62-upWoQY",
+            url: "/project/gimbal",
         },
         {
             name: "Small Form Factor Ryzen PC Build",
