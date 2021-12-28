@@ -14,7 +14,7 @@ Recently I’ve been working on [Morse](https://github.com/wwsalmon/morse-wp-the
 
 To start, it would just be Google Fonts. Good variety, hopefully easy to implement. The vision was that a user could go to the Customizer interface in WordPress, plug in a font name, and watch the preview update to use that font where applicable, then publish it and have their changes go live.
 
-{% include video-gen.html src='/img/blog/2020-06/morse-fonts-demo.mp4' %}
+<video src="/blog/2020-06/morse-fonts-demo.mp4"/>
 
 Honestly, this was one of the features I was most intimidated by. I’ve worked a fair bit with WordPress and PHP, and with JavaScript, but never in combination. I looked through the source code of open-source plugins and themes that had already implemented Google Fonts integration and got lost in their endless includes and complexities, not even knowing where to find the code that mattered.
 

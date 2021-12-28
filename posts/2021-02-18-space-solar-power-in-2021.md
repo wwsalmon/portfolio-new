@@ -4,7 +4,13 @@ layout: post
 date: '2021-02-18 02:28:18'
 ---
 
-{% include youtube-gen.html id="qxTM_suiHtk" %}
+<div className="yt-container">
+    <iframe
+        src="https://www.youtube.com/embed/qxTM_suiHtk?modestbranding=1"
+        frameBorder="0"
+        allowFullScreen
+    />
+</div>
 
 ## Introduction: Why Consider Space Solar Power?
 

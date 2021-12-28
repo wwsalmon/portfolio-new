@@ -216,7 +216,7 @@ Now, everything was set up for me to be able to fully replicate then navbar from
 
 My navbar is pretty straightforward: a little nameplate on the left, and a list of links on the right. There are two little fancy things on top of this:
 
-{% include video-gen.html src="/img/blog/2020-08/navbar-scrolling.mp4" %}
+<video src="/blog/2020-08/navbar-scrolling.mp4"/>
 
 1. Once scrolled past a certain point, the "samson/zhang" nameplate shrinks to "s.zhang".
 2. On mobile, the list of links is replaced by a right-side hamburger menu.

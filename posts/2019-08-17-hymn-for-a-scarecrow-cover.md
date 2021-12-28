@@ -4,4 +4,10 @@ layout: post
 tags: project music
 ---
 
-{% include youtube-gen.html id='nGZXvGalQoU' %}
+<div className="yt-container">
+    <iframe
+        src="https://www.youtube.com/embed/nGZXvGalQoU?modestbranding=1"
+        frameBorder="0"
+        allowFullScreen
+    />
+</div>
