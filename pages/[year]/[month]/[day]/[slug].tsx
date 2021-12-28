@@ -77,6 +77,15 @@ export default function BlogPost(props: BlogPostProps) {
             </div>
             <p className="opacity-50 my-8 uppercase font-bold">{readingTime} min read</p>
             <div dangerouslySetInnerHTML={{__html: markdown.value.toString()}} className="prose mt-8" style={{fontSize: 20}}/>
+            <div id="hyvor-talk-view" className="border-top pt-6 mt-6"/>
+            <script type="text/javascript" dangerouslySetInnerHTML={{__html: `
+            var HYVOR_TALK_WEBSITE = 1008; // DO NOT CHANGE THIS
+            var HYVOR_TALK_CONFIG = {
+                url: false,
+                id: false
+            };
+            `}}/>
+            <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"/>
         </div>
     )
 }
