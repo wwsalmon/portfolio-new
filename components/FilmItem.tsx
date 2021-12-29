@@ -30,7 +30,7 @@ export default function FilmItem({item, className}: {item: FilmObj, className?: 
                 <SliderButton right={true} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} length={item.images.length}/>
                 <SliderButton right={false} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} length={item.images.length}/>
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[5] flex">
-                    <div className="p-2 bg-white">
+                    <div className="p-2 bg-white flex items-center">
                         <span>{selectedIndex + 1}/{item.images.length}</span>
                     </div>
                     <Link href={`/project/${item.slug}`}>

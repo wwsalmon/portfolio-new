@@ -13,7 +13,7 @@ export default function Gimbal({}: {}) {
                 description="Building a motorized 3-axis gimbal to stabilize cameras for filmmaking using 3D printing and laser cutting."
             />
             <FlexContainer>
-                <div className="md:w-2/3 md:px-4">
+                <div className="md:w-2/3 md:px-4 mb-8 md:mb-0">
                     <YTEmbed ytid="c5Udwl8OnfE"/>
                 </div>
                 <div className="md:w-1/3 md:px-4">

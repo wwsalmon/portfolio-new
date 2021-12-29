@@ -6,7 +6,7 @@ import {ReactNode, useState} from "react";
 import {SliderButton} from "../../components/FilmItem";
 
 export const FlexContainer = ({children}: {children: ReactNode}) => (
-    <div className="-mx-4 my-16 md:flex">
+    <div className="md:-mx-4 my-16 md:flex">
         {children}
     </div>
 )
@@ -49,7 +49,7 @@ export const Slider = ({id, filepath, filenames}: {id: string, filepath: string,
 
 export const ProjectSection = ({id, filepath, filenames, children}: {id: string, filepath: string, filenames: string[], children: ReactNode}) => (
     <FlexContainer>
-        <div className="md:w-2/3 md:px-4">
+        <div className="md:w-2/3 md:px-4 mb-4 md:mb-0">
             <Slider
                 id={id}
                 filepath={filepath}
@@ -72,7 +72,7 @@ export default function Autoturner({}: {}) {
                 description="A mechanical page turner for musicians. The final result of Cooper Union's 6 week product design and prototyping Makerspace class in the Summer STEM 2018 program."
             />
             <FlexContainer>
-                <div className="md:w-1/2 md:px-4">
+                <div className="md:w-1/2 md:px-4 mb-8 md:mb-0">
                     <YTEmbed ytid="bW62-upWoQY"/>
                     <p className="mt-8">
                         <b>Video:</b> demo of Auto Turner in use while playing a piece on a grand piano, operated by a foot pedal.
