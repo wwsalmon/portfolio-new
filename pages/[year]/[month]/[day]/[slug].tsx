@@ -12,6 +12,15 @@ import rehypeStringify from "rehype-stringify";
 
 export interface BlogPostProps {title: string, date: string, tags: string[], body: string, filename: string};
 
+export const BackLink = () => (
+    <Link href="/blog">
+        <a className="flex items-center font-bold text-xl mt-16 mb-8">
+            <FiArrowLeft/>
+            <span className="ml-2">All Blog Posts</span>
+        </a>
+    </Link>
+)
+
 export const getStaticPaths: GetStaticPaths = () => {
     const fs = require("fs");
     const files = fs.readdirSync(process.cwd() + "/posts/");
@@ -58,12 +67,7 @@ export default function BlogPost(props: BlogPostProps) {
     return (
         <div className="max-w-3xl mx-auto px-4">
             <SEO title={title}/>
-            <Link href="/blog">
-                <a className="flex items-center font-bold text-xl mt-16 mb-8">
-                    <FiArrowLeft/>
-                    <span className="ml-2">All Blog Posts</span>
-                </a>
-            </Link>
+            <BackLink/>
             <h2 className="font-bold text-4xl leading-[1.4]">{title}</h2>
             <div className="text-xl my-8">
                 {tags.map(tag => (
